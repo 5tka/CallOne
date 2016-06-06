@@ -1,0 +1,62 @@
+.header{
+	&__top-line{
+		@include clearfix();
+		outline: 1px solid red;
+		min-height: 70px;
+		background: #fff;
+		line-height: 70px;
+	}
+	&__logo-wrap{
+		float: left;
+		img{
+			vertical-align: middle;
+		}
+	}
+	&__nav-wrap{
+		float: right;
+	}
+	&__banner-wrap{
+		min-height: 580px;
+		background: url('../img/header_bg.jpg'); 
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.banner{
+	&__title-wrap{
+		margin-top: 70px;
+		width: 61%;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			border-left: 8px solid $green
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	&-title{
+		@include font-size(35px);
+		text-transform: uppercase;
+	}
+}
+.nav{
+	&__item{
+		display: inline-block;
+		margin-left: 60px;
+		&:first-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		@include font-size(23px);
+		padding: 10px 12px;
+		&_active{
+			color: $green;
+			border: 2px dotted $green;
+			border-radius: 10px;
+		}
+	}
+}
