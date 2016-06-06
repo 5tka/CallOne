@@ -1,16 +1,16 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),// Склейка файлов
     browserSync  = require('browser-sync'), // BrowserSync
-    
+
     jade = require('gulp-jade'), // Jade обработчик html
-    
+
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     cssnano = require('gulp-cssnano'), //Минификация CSS
     autoprefixer = require('gulp-autoprefixer'), // Автопрефиксы CSS
-    
+
     imagemin = require('gulp-imagemin'),// Сжатие JPG, PNG, SVG, GIF
-    
+
     uglify = require('gulp-uglify'), // Минификация JS
 
     plumber = require('gulp-plumber'),
@@ -34,7 +34,7 @@ gulp.task('sass-dev', function() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(plumber())
     // .pipe(sourcemaps.init())
-    
+
     .pipe(sass({
       style: 'compressed',
       errLogToConsole: true,
@@ -95,12 +95,15 @@ gulp.task('fonts', function(){
   .pipe(gulp.dest('build/css/fonts/'))
   .pipe(browserSync.stream());
 });
-
-
+gulp.task('crosBR',function(){
+        gulp.src('src/js/crossbr/*')
+        .pipe(gulp.dest('build/js/crossbr/'))
+        .pipe(browserSync.stream());
+  });
 
 // WATCH
-gulp.task('default', ['jade-templates','sass-dev','img','js-vendor','js','favicon','fonts'], function () {
-    
+gulp.task('default', ['jade-templates','sass-dev','img','js-vendor','js','favicon','fonts','crosBR'], function () {
+
     browserSync.init({
       server : './build'
     });
@@ -112,7 +115,7 @@ gulp.task('default', ['jade-templates','sass-dev','img','js-vendor','js','favico
     watch(["./src/sass/**/*.scss",'./src/sass/_*.scss'], function() {
       gulp.start('sass-dev');
     });
-    
+
     watch('./src/js/*.js', function() {
       gulp.start('js');
     });
@@ -132,5 +135,6 @@ gulp.task('default', ['jade-templates','sass-dev','img','js-vendor','js','favico
     watch('./src/fonts/*', function() {
       gulp.start('fonts');
     });
+
 
 });
