@@ -1,5 +1,8 @@
-*{
-	box-sizing: border-box;
+body{
+	font-family: 'etelka_prolight';
+}
+h1{
+	font-size: 2em;
 }
 .container{
 	@include clearfix();
@@ -7,6 +10,11 @@
 	margin: 0 auto;
 	padding: 0 10px;
 }
-// .wrapper{
-// 	min-width: 1140px;
-// }
+@include breakpoint(1024){
+	h1{
+		font-size: .2em;
+	}
+}
+*{
+	box-sizing: border-box; *behavior: url(js/crossbr/boxsizing.htc);
+}
