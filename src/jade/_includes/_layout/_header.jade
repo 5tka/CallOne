@@ -15,8 +15,27 @@ header.header
 		.container
 			.banner__title-wrap
 				h1.banner-title
-					| Устали контролировать 
-					| отдел продаж и операторов?
+					| Устали контролировать отдел  
+				h1.banner-title
+					| продаж и операторов?
 				span.banner-sub-title
 					| У вас есть миллион причин не 
 					| делать этого. Например, мы.
+			.banner__form-wrap
+				form.count-price
+					label
+						select.select-service(name="type-service" required)
+							option.option-service(value="" disabled) Тип услуги
+							option.option-service(value="") Тип услуги 1
+							option.option-service(value="") Тип услуги 2
+							option.option-service(value="") Тип услуги 3
+					label
+						select.select-service(name="service" required)
+							option.option-service(value="" disabled) Услуга
+							option.option-service(value="" ) Услуга 1
+							option.option-service(value="" ) Услуга 2
+							option.option-service(value="" ) Услуга 3
+					label
+						input.input-tel(type="text" required placeholder="Ваш телефон")
+					input.input-sbt(type="submit" value="Рассчитать стоимость")  
+include _services

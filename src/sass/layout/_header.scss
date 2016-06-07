@@ -1,4 +1,5 @@
 .header{
+	padding-bottom: 45px;
 	&__top-line{
 		@include clearfix();
 		outline: 1px solid red;
@@ -25,21 +26,79 @@
 }
 .banner{
 	&__title-wrap{
+		color: $grey;
 		margin-top: 70px;
 		width: 61%;
 		position: relative;
+		margin-bottom: 30px;
 		&:before{
 			content: '';
 			position: absolute;
-			border-left: 8px solid $green
-			left: 0;
+			border-left: 8px solid $green;
+			left: -18px;
 			bottom: 0;
-			right: 0;
+			top: 0;
 		}
 	}
 	&-title{
 		@include font-size(35px);
 		text-transform: uppercase;
+		background: #fff;
+		margin-bottom: 15px;
+	    padding: 5px 10px;
+	}
+	&-sub-title{
+		@include font-size(18px);
+	}
+	&__form-wrap{
+		width: 22%;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			border-left: 8px solid $green;
+			left: -18px;
+			bottom: 0;
+			top: 0;
+		}
+		.select-service,
+		.input-tel{
+			@include font-size(21px);
+			width: 100%;
+			margin-bottom: 20px;
+			background: none;
+			border: 3px solid #fff;
+			padding: 10px;
+			cursor: pointer;
+			outline: none;
+			color: $grey;
+		}
+		.input-tel::-webkit-input-placeholder{
+			color: $grey;
+		}
+		.option-service{
+			@include font-size(21px);
+			cursor: pointer;
+			padding: 10px;
+			outline: none;
+			color: $grey;
+		}
+		.input-sbt{
+			@include font-size(20px);
+			width: 100%;
+			color: #fff;
+			cursor: pointer;
+			padding: 11px;
+			border: none;
+			background: $green;
+			outline: none;
+			&:hover{
+				background: #6DA939;
+			}
+			&:active{
+				background: #496F28;
+			}
+		}
 	}
 }
 .nav{
