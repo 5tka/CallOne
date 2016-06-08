@@ -1,0 +1,62 @@
+.safe{
+	padding-top: 30px;
+	min-height: 500px;
+	border-bottom: 3px solid $grey;
+	&__about{
+		font-family: 'etelkaregregular';
+		color: $green;
+		margin-top: 30px;
+		text-align: center;
+		@include font-size(24px);
+	}
+	&__link{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	&__img{
+		float: right;
+	}
+	&__items-wrap{
+		float: left;
+		width: 68%;
+		margin-bottom: 30px;
+		&:last-child:after{
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	&__item{
+		width: 48%;
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+		margin-bottom: 40px;
+		margin-right: 10px;
+		&:nth-child(3),
+		&:nth-child(4){
+			margin-bottom: 0;
+		}
+		&-title{
+			position: relative;
+			.span{
+				@include font-size(24px);
+				font-family: 'etelkaregregular';
+				color: $grey;
+				margin-bottom: 10px;
+				display: block;
+				&:before{
+					content: '';
+					position: absolute;
+					background: url('../img/icons/romb.png') 0 0 no-repeat;
+					width: 18px;
+					height: 18px;
+					top: 6px;
+					left: -25px;
+				}
+			}
+		}
+	}
+}

@@ -41,6 +41,7 @@
 .every-day__make-order{
 	text-align: center;
 	margin-top: 70px;
+	padding-bottom: 20px;
 	.make-order{
 		display: inline-block;
 	    font-family: 'etelkaregregular';
@@ -54,6 +55,102 @@
 		&:hover{
 		color: $green;
 		background: #fff;
+		}
+	}
+}
+.about-company{
+	padding: 50px 0 30px;
+}
+
+.about-company__title{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.about-company__content{
+	p{
+		margin-bottom: 20px;
+	}
+}
+.hidden_block{
+	.init_hide{
+		text-align: center;
+		@include border-radius(4px);
+		display: block;
+		width: 200px;
+		cursor: pointer;
+		margin: 0 auto;
+		color: $green;
+		font-weight: 600;
+		font-size: 18px;
+		position: relative;
+		margin: 20px auto 20px;
+		&:hover{
+			background: $green;
+			color: #fff;
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			display: block;
+			left: 50%;
+			margin-left: -10px;
+			top: 100%;
+			border: 12px solid transparent;
+			border-top: 19px solid $green;
+		}
+		&:before{
+			display: none;
+			position: absolute;
+			content: '';
+			left: 50%;
+			margin-left: -10px;
+			bottom: 100%;
+			border: 12px solid transparent;
+			border-bottom: 19px solid $green;
+		}
+		&.active{
+			margin: 20px auto 0;
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: block;
+			}
+		}
+	}
+	.hidden_content{
+		display: none;
+	}
+}
+
+@include breakpoint(1100) {
+	.every-day__content{
+		.every-day__item{
+			&.bottom{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+@include breakpoint(700) {
+	.every-day{
+		.every-day__title{
+			margin: 20px 0 20px;
+		}
+		.every-day__make-order{
+			margin-top: 20px;
+		}
+		.every-day__title{
+			font-size: 35px;
+		}
+		.amount{
+			font-size: 35px;
+		}
+		.every-day__make-order .make-order{
+			font-size: 25px;
 		}
 	}
 }
