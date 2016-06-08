@@ -22,11 +22,13 @@
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
+		padding-bottom: 35px;
 	}
 }
 .banner{
 	&__title-wrap{
 		color: $grey;
+		margin-left: 18px;
 		margin-top: 70px;
 		width: 61%;
 		position: relative;
@@ -49,8 +51,10 @@
 	}
 	&-sub-title{
 		@include font-size(18px);
+		font-family: 'etelka_probold';
 	}
 	&__form-wrap{
+		margin-left: 18px;
 		width: 22%;
 		position: relative;
 		&:before{
@@ -61,10 +65,37 @@
 			bottom: 0;
 			top: 0;
 		}
+		.count-price select{
+			display: none !important;
+			margin: 0 auto !important;
+			padding: 0px !important;
+			position: absolute !important;
+			left: 0px !important;
+			top: 0px !important;
+			width: 10px !important;
+			height: 10px !important;
+			opacity: 0 !important;
+		}
+		.jq-selectbox__select-text{
+			padding: 10px;
+		}
+		.jq-selectbox{
+			padding: 0 !important;
+		}
+		.jq-selectbox__select{
+			&:after{
+				content: '';
+				position: absolute;
+				width: 18px;
+				height: 9px;
+				background: url('../img/icons/arrow-b.png');
+				right: 15px;
+				top: 21px;	
+			}
+		}
 		.select-service,
 		.input-tel{
 			@include font-size(21px);
-			width: 100%;
 			margin-bottom: 20px;
 			background: none;
 			border: 3px solid #fff;
@@ -72,20 +103,31 @@
 			cursor: pointer;
 			outline: none;
 			color: $grey;
+			background: #fff;
+			width: 240px;
 		}
 		.input-tel::-webkit-input-placeholder{
 			color: $grey;
 		}
 		.option-service{
-			@include font-size(21px);
+			@include font-size(22px);
 			cursor: pointer;
 			padding: 10px;
 			outline: none;
 			color: $grey;
+			width: 240px;
+			background: #fff;
+			border-bottom: 2px solid transparent;
+			&-h{
+				&:hover{
+					border-bottom: 2px solid $green;
+					color: $green;					
+				}
+			}
 		}
 		.input-sbt{
 			@include font-size(20px);
-			width: 100%;
+			width: 240px;
 			color: #fff;
 			cursor: pointer;
 			padding: 11px;
@@ -103,13 +145,9 @@
 .nav{
 	&__item{
 		display: inline-block;
-		margin-left: 60px;
-		&:first-child{
-			margin-right: 0;
-		}
 	}
 	&__link{
-		@include font-size(23px);
+		@include font-size(22px);
 		@include transition(.25s);
 		padding: 10px 12px;
 		border: 2px dotted transparent;

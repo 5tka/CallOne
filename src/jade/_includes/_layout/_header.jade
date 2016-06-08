@@ -12,6 +12,8 @@ header.header
 						a.nav__link(href="#") Вопрос и ответ 
 					li.nav__item
 						a.nav__link(href="#") Контакты
+					li.nav__item
+						a.nav__link(href="tel:7(495)5874033") 7 (495) 587-40-33
 	.header__banner-wrap
 		.container
 			.banner__title-wrap
@@ -25,17 +27,17 @@ header.header
 			.banner__form-wrap
 				form.count-price.jq-select-multiple
 					label
-						select.select-service(name="type-service" required)
-							option.option-service(value="") Тип услуги 
-							option.option-service(value="") Тип услуги 1
-							option.option-service(value="") Тип услуги 2
-							option.option-service(value="") Тип услуги 3
+						select.select-service(name="type-service" data-placeholder="Тип услуг" required)
+							option.option-service
+							option.option-service.option-service-h(value="") Тип услуги 1
+							option.option-service.option-service-h(value="") Тип услуги 2
+							option.option-service.option-service-h(value="") Тип услуги 3
 					label
-						select.select-service(name="service" required)
-							option.option-service.jq-select-multiple.disabled(value="") Услуга
-							option.option-service(value="" ) Услуга 1
-							option.option-service(value="" ) Услуга 2
-							option.option-service(value="" ) Услуга 3
+						select.select-service(name="service" data-placeholder="Услуга" required)
+							option.option-service
+							option.option-service.option-service-h(value="" ) Услуга 1
+							option.option-service.option-service-h(value="" ) Услуга 2
+							option.option-service.option-service-h(value="" ) Услуга 3
 					label
 						input.input-tel(type="text" required placeholder="Ваш телефон")
 					input.input-sbt(type="submit" value="Рассчитать стоимость")  

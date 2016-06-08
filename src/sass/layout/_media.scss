@@ -1,0 +1,51 @@
+@include breakpoint(1040){
+	.h2{
+		text-align: center;
+	}
+	.services{
+		&__items-wrap {
+			width: 80%;
+			text-align: center;
+			margin: 0 auto;
+		}	
+		&__item{
+			margin-bottom: 20px;
+		}
+	}
+	.safe{
+		&__items-wrap{
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+		&__img{
+			width: 250px;
+			margin: 0 auto;
+			float: none;
+			img{
+				padding-bottom: 20px;
+			}
+		}
+		&__item{
+			text-align: center;
+			margin-bottom: 40px !important;
+		}
+	}
+}
+@include breakpoint(950){
+	.header{
+		&__logo-wrap{
+			float: none;
+		}
+		&__nav-wrap{
+			float: none;
+		}
+	}
+	.nav{
+		&__item{
+			display: block;
+			text-align: center;
+		}
+	}
+
+}

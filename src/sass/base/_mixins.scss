@@ -165,7 +165,7 @@
 
 // Используй это, если нужна индивидуальная ширина. Или лучше всегда эту использовать.
 @mixin breakpoint($width){
-  @media only screen and (max-width: ($width / 16) + em) {
+  @media only screen and (max-width: $width + px) {
     @content;
   } 
 }

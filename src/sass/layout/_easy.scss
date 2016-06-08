@@ -3,15 +3,21 @@
 	min-height: 500px;
 	&__items-wrap{
 		width: 100%;
-		text-align: justify;
+		text-align: center;
 		&:last-child:after{
 			content: '';
 			width: 100%;
 			display: inline-block;
 		}
 	}
+	&__call-btn{
+		text-align: center;
+	}
+	&-button__link{
+		display: inline-block;
+	}
 	&__item{
-		width: 24%;
+		width: 250px;
 		display: inline-block;
 		position: relative;
 		text-align: center;
@@ -47,6 +53,7 @@
 				left: -6px;
 				top: 10px;
 				z-index: 5;
+				text-align: center;
 				width: 35px;
 				height: 35px;
 				border-radius: 50%;
@@ -55,7 +62,7 @@
 				vertical-align: middle;
 				padding-top: 5px;
 				display: block;
-				line-height: 30px;
+				line-height: 26px;
 				font-family: 'etelka_probold';
 				@include font-size(35px);
 				color: #fff;
@@ -89,13 +96,16 @@
 			}
 		}
 		&-title{
-			min-height: 76px;
+			min-height: 50px;
 			.span{
-				@include font-size(30px);
+				@include font-size(20px);
 				line-height: 23px;
 				font-family: 'etelkaregregular';
 				color: $grey;
 				display: block;
+			}
+			.p{
+				@include font-size(14px);
 			}
 		}
 	}

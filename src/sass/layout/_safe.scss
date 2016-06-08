@@ -19,6 +19,7 @@
 		float: right;
 	}
 	&__items-wrap{
+		margin-left: 25px;
 		float: left;
 		width: 68%;
 		margin-bottom: 30px;
@@ -29,7 +30,7 @@
 		}
 	}
 	&__item{
-		width: 48%;
+		width: 334px;
 		display: inline-block;
 		text-align: left;
 		vertical-align: top;

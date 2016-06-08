@@ -20,7 +20,7 @@
 		}
 	}
 	&__item{
-		width: 19%;
+		width: 200px;
 		display: inline-block;
 		position: relative;
 		text-align: center;
@@ -47,7 +47,7 @@
 		}
 		&-dscr{
 			.span{
-				@include font-size(12px);
+				@include font-size(14px);
 				color: #acacac;
 			}
 		}
