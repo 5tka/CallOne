@@ -92,11 +92,10 @@
 			border: none;
 			background: $green;
 			outline: none;
+			@include transition(.25s);
 			&:hover{
-				background: #6DA939;
-			}
-			&:active{
-				background: #496F28;
+				color: $green;
+				background: #fff;
 			}
 		}
 	}
@@ -111,11 +110,16 @@
 	}
 	&__link{
 		@include font-size(23px);
+		@include transition(.25s);
 		padding: 10px 12px;
+		border: 2px dotted transparent;
 		&_active{
 			color: $green;
 			border: 2px dotted $green;
 			border-radius: 10px;
+		}
+		&:hover{
+			color: $green;
 		}
 	}
 }
