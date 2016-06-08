@@ -12,6 +12,9 @@
 	.every-day__title{
 		margin: 45px 0 55px;
 	}
+	.container{
+		padding-bottom: 50px;
+	}
 }
 .every-day__content{
 	text-align: center;
@@ -22,7 +25,7 @@
 		min-width: 150px;
 		margin-left: 1%;
 		&.bottom{
-			margin-top: 60px;
+			margin-top: 138px;
 		}
 	}
 	.amount{
@@ -35,6 +38,7 @@
 	.text {
 		max-width: 200px;
 		font-size: 16px;
+		margin-top: -35px;
 	}
 }
 
@@ -110,7 +114,7 @@
 			border-bottom: 19px solid $green;
 		}
 		&.active{
-			margin: 20px auto 0;
+			margin: 40px auto 0;
 			&:after{
 				display: none;
 			}
