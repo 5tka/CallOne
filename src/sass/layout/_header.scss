@@ -2,7 +2,6 @@
 	padding-bottom: 45px;
 	&__top-line{
 		@include clearfix();
-		outline: 1px solid red;
 		min-height: 70px;
 		background: #fff;
 		line-height: 70px;

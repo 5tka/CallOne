@@ -49,3 +49,101 @@
 	}
 
 }
+@include breakpoint (920){
+	.footer__left-block{
+		float:none;
+		width: 100%;
+		.logo-wrap{
+			text-align: center;
+		}
+		.menu-wrap{
+			margin: 0 auto;	
+			max-width:100%;
+			text-align: center;
+		}
+	}
+	.footer__right-block{
+		float:none;
+		width: 100%;	
+	}
+}
+@include breakpoint(750){
+	.partners__item{
+		display: block;
+		margin: 0 auto;
+		margin-top: 45px;
+		width: 50%;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	.call-button__link{
+		padding: 10px 30px;
+		@include font-size(20px);
+	}
+	.call-title-big{
+		@include font-size(30px);
+	}
+	.call-title-small{
+		@include font-size(20px);
+	}
+
+}
+
+// Sanya
+@include breakpoint(1100) {
+	.every-day__content{
+		.every-day__item{
+			&.bottom{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+@include breakpoint(700) {
+	.every-day{
+		.every-day__title{
+			margin: 20px 0 20px;
+		}
+		.every-day__make-order{
+			margin-top: 20px;
+		}
+		.every-day__title{
+			font-size: 35px;
+		}
+		.amount{
+			font-size: 35px;
+		}
+		.every-day__make-order .make-order{
+			font-size: 25px;
+		}
+	}
+	.uslugi__wrap{
+		text-align: center;
+	}
+	.uslugi__item-block{
+		width: 45%;
+	}
+}
+@include breakpoint(440){
+	.social-block__wrap{
+		float:none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.pay-block__wrap{
+		float:none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+		.pay-block__link{
+			margin:0 auto;
+		}	
+	}
+	.uslugi__item-block{
+		width: 100%;
+	}
+}

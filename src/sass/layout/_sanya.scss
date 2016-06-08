@@ -124,33 +124,3 @@
 	}
 }
 
-@include breakpoint(1100) {
-	.every-day__content{
-		.every-day__item{
-			&.bottom{
-				margin-top: 0;
-			}
-		}
-	}
-}
-
-
-@include breakpoint(700) {
-	.every-day{
-		.every-day__title{
-			margin: 20px 0 20px;
-		}
-		.every-day__make-order{
-			margin-top: 20px;
-		}
-		.every-day__title{
-			font-size: 35px;
-		}
-		.amount{
-			font-size: 35px;
-		}
-		.every-day__make-order .make-order{
-			font-size: 25px;
-		}
-	}
-}
