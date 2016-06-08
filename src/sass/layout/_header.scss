@@ -32,7 +32,7 @@
 		padding-left: 18px;
 		color: $grey;
 		margin-top: 70px;
-		width: 61%;
+		// width: 61%;
 		position: relative;
 		margin-bottom: 30px;
 		&:before{
@@ -51,6 +51,8 @@
 		margin-bottom: 15px;
 	    padding: 5px 10px;
 	    display: inline-block;
+	    font-family: 'etelka_probold';
+	    width: 60%; // однакова ширина h1
 	}
 	&-sub-title{
 		@include font-size(18px);
@@ -82,6 +84,7 @@
 		}
 		.jq-selectbox__select-text{
 			padding: 10px;
+			font-family: 'etelkaregregular';
 		}
 		.jq-selectbox{
 			padding: 0 !important;
@@ -98,6 +101,7 @@
 			}
 		}
 		.jq-selectbox__dropdown{
+			top: 50px;
 			left: -3px;
 		}
 		.select-service,
@@ -110,7 +114,6 @@
 			cursor: pointer;
 			outline: none;
 			color: $grey;
-			background: #fff;
 			width: 240px;
 		}
 		.input-tel::-webkit-input-placeholder{
@@ -123,12 +126,13 @@
 			outline: none;
 			color: $grey;
 			width: 240px;
-			background: #fff;
-			border-bottom: 2px solid transparent;
+			border-bottom: 3px solid #fff;
 			&-h{
+				background: #fff;
 				&:hover{
-					border-bottom: 2px solid $green;
-					color: $green;					
+					border-bottom: 3px solid $green;
+					color: $green;		
+
 				}
 			}
 		}
@@ -152,12 +156,15 @@
 .nav{
 	&__item{
 		display: inline-block;
+		position: relative;
 	}
 	&__link{
-		@include font-size(22px);
+		@include font-size(20px);
 		@include transition(.25s);
-		padding: 10px 12px;
+		padding: 0 12px;
 		border: 2px dotted transparent;
+		font-family: 'etelkaregregular';
+		color: #5f6060;
 		&_active{
 			color: $green;
 			border: 2px dotted $green;
@@ -165,6 +172,20 @@
 		}
 		&:hover{
 			color: $green;
+		}
+		&-phone{
+			position: absolute;
+			display: inline-block;
+			bottom: 0;
+			right: 14px;
+			top: 20px;
+			color: #4c00f8;
+			@include font-size(14px);
+			text-decoration: underline;
+			font-family: 'etelkaregregular';
+			&:hover{
+				text-decoration: none;
+			}
 		}
 	}
 }
