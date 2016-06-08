@@ -1,40 +1,13 @@
-@include breakpoint(400){
-	.banner-title{
-		@include font-size(27px);
-	}
-}
-
-@include breakpoint(700){
-	.easy__item{
-		margin-bottom: 50px !important;
-		&:after{
-			content: '';
-			position: absolute;
-			background: url('../img/icons/arrow-b.png') 0 0 no-repeat;
-			width: 18px;
-			height: 36px;
-			background-repeat: repeat-y;
-			left: 50%;
-			margin-left: -9px;
-			margin-top: 5px;
-		}
-		&:last-child{
-			margin-bottom: 20px !important;
-			&:after{
-				display: none;
-
+@include breakpoint(1100) {
+	.every-day__content{
+		.every-day__item{
+			&.bottom{
+				margin-top: 0;
 			}
 		}
 	}
 }
-@include breakpoint(500){
-	.safe__items-wrap{
-		width: 100%;
-	}
-	.safe__item{
-		width: 100%;
-	}
-}
+
 @include breakpoint(1040){
 	.h2{
 		position: relative;
@@ -87,9 +60,16 @@
 	.header{
 		&__logo-wrap{
 			float: none;
+			display: inline-block;
+			width: 47%;
+			vertical-align: middle;
+			text-align: center;
 		}
 		&__nav-wrap{
 			float: none;
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
 		}
 	}
 	.nav{
@@ -97,5 +77,155 @@
 			display: block;
 			text-align: center;
 		}
+	}
+}
+@include breakpoint (920){
+	.footer__left-block{
+		float:none;
+		width: 100%;
+		.logo-wrap{
+			text-align: center;
+		}
+		.menu-wrap{
+			margin: 0 auto;	
+			max-width:100%;
+			text-align: center;
+		}
+	}
+	.footer__right-block{
+		float:none;
+		width: 100%;	
+	}
+}
+@include breakpoint(750){
+	.call-center{
+		padding-top: 30px;
+		padding-bottom: 30px; 
+	}
+	.partners__item{
+		display: block;
+		margin: 0 auto;
+		margin-top: 45px;
+		width: 50%;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	.call-button__link{
+		padding: 10px 30px;
+		@include font-size(20px);
+	}
+	.call-title-big{
+		@include font-size(30px);
+		margin-bottom: 25px;
+	}
+	.call-title-small{
+		@include font-size(20px);
+		margin-bottom: 50px;
+	}
+
+}
+
+@include breakpoint(700){
+	.banner__title-wrap{
+		width: 100%;
+	}
+	.easy__item{
+		margin-bottom: 50px !important;
+		&:after{
+			content: '';
+			position: absolute;
+			background: url('../img/icons/arrow-b.png') 0 0 no-repeat;
+			width: 18px;
+			height: 36px;
+			background-repeat: repeat-y;
+			left: 50%;
+			margin-left: -9px;
+			margin-top: 5px;
+		}
+		&:last-child{
+			margin-bottom: 20px !important;
+			&:after{
+				display: none;
+
+			}
+		}
+	}
+	.every-day{
+		.every-day__title{
+			margin: 20px 0 20px;
+		}
+		.every-day__make-order{
+			margin-top: 20px;
+		}
+		.every-day__title{
+			font-size: 35px;
+		}
+		.amount{
+			font-size: 35px;
+		}
+		.every-day__make-order .make-order{
+			font-size: 25px;
+		}
+	}
+	.uslugi__wrap{
+		text-align: center;
+	}
+	.uslugi__item-block{
+		width: 45%;
+	}
+}
+@include breakpoint(500){
+	.safe__items-wrap{
+		width: 100%;
+	}
+	.safe__item{
+		width: 100%;
+	}
+	.header{
+		&__logo-wrap{
+			float: none;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}
+		&__nav-wrap{
+			float: none;
+			width: 100%;
+		}
+	}
+	.nav{
+		&__list{
+			display: block;
+		}
+		&__item{
+			display: block;
+			text-align: center;
+		}
+	}
+}
+@include breakpoint(440){
+	.social-block__wrap{
+		float:none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.pay-block__wrap{
+		float:none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+		.pay-block__link{
+			margin:0 auto;
+		}	
+	}
+	.uslugi__item-block{
+		width: 100%;
+	}
+}
+@include breakpoint(400){
+	.banner-title{
+		@include font-size(27px);
 	}
 }
