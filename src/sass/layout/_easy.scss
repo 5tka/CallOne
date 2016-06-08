@@ -4,6 +4,7 @@
 	&__items-wrap{
 		width: 100%;
 		text-align: center;
+		margin-bottom: 30px;
 		&:last-child:after{
 			content: '';
 			width: 100%;
@@ -12,8 +13,9 @@
 	}
 	&__call-btn{
 		text-align: center;
+		margin-bottom: 20px;
 	}
-	&-button__link{
+	.call-button__link{
 		display: inline-block;
 	}
 	&__item{

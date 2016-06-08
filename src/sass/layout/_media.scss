@@ -1,6 +1,57 @@
+@include breakpoint(400){
+	.banner-title{
+		@include font-size(27px);
+	}
+}
+
+@include breakpoint(700){
+	.easy__item{
+		margin-bottom: 50px !important;
+		&:after{
+			content: '';
+			position: absolute;
+			background: url('../img/icons/arrow-b.png') 0 0 no-repeat;
+			width: 18px;
+			height: 36px;
+			background-repeat: repeat-y;
+			left: 50%;
+			margin-left: -9px;
+			margin-top: 5px;
+		}
+		&:last-child{
+			margin-bottom: 20px !important;
+			&:after{
+				display: none;
+
+			}
+		}
+	}
+}
+@include breakpoint(500){
+	.safe__items-wrap{
+		width: 100%;
+	}
+	.safe__item{
+		width: 100%;
+	}
+}
 @include breakpoint(1040){
 	.h2{
-		text-align: center;
+		position: relative;
+		margin-left: 20px;
+	}
+	.easy{
+		&__items-wrap{
+			width: 75%;
+			text-align: center;
+			margin: 0 auto;
+		}
+		&__item{
+			margin-bottom: 20px;
+			&:before{
+				display: none;
+			}
+		}
 	}
 	.services{
 		&__items-wrap {
@@ -47,5 +98,4 @@
 			text-align: center;
 		}
 	}
-
 }
