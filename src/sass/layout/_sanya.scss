@@ -1,0 +1,59 @@
+.every-day{
+	background: url('../img/bg_all-day.jpg') center center no-repeat;
+	position: relative;
+	min-height: 650px;
+	color: #fff;
+	.every-day__title,
+	.amount {
+	    font-family: 'etelkaregregular';
+		font-size: 60px;
+		text-align: center;
+	}
+	.every-day__title{
+		margin: 45px 0 55px;
+	}
+}
+.every-day__content{
+	text-align: center;
+	.every-day__item{
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		min-width: 150px;
+		margin-left: 1%;
+		&.bottom{
+			margin-top: 60px;
+		}
+	}
+	.amount{
+		background: url('../img/romb.png') center center no-repeat;
+		display: block;
+		height: 149px;
+		line-height: 150px;
+		vertical-align: middle;
+	}
+	.text {
+		max-width: 200px;
+		font-size: 16px;
+	}
+}
+
+.every-day__make-order{
+	text-align: center;
+	margin-top: 70px;
+	.make-order{
+		display: inline-block;
+	    font-family: 'etelkaregregular';
+		padding: 13px 22px;
+		background: $green;
+		color: #fff;
+		font-size: 30px;
+		line-height: 33px;
+		text-transform: uppercase;
+		@include border-radius(14px);
+		&:hover{
+		color: $green;
+		background: #fff;
+		}
+	}
+}
