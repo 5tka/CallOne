@@ -1,5 +1,6 @@
 body{
 	font-family: 'etelka_prolight';
+	color: $lightgrey;
 }
 h1{
 	font-size: 2em;
@@ -7,6 +8,12 @@ h1{
 .container{
 	@include clearfix();
 	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.container-short{
+	@include clearfix();
+	max-width: 1040px;
 	margin: 0 auto;
 	padding: 0 10px;
 }

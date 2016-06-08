@@ -2,7 +2,8 @@ header.header
 	.header__top-line
 		.container
 			.header__logo-wrap
-				img(src="img/logo.png", alt="")
+				a(href="#")
+					img(src="img/logo.png", alt="")
 			.header__nav-wrap
 				ul.nav__list
 					li.nav__item
@@ -22,16 +23,16 @@ header.header
 					| У вас есть миллион причин не 
 					| делать этого. Например, мы.
 			.banner__form-wrap
-				form.count-price
+				form.count-price.jq-select-multiple
 					label
 						select.select-service(name="type-service" required)
-							option.option-service(value="" disabled) Тип услуги
+							option.option-service(value="") Тип услуги 
 							option.option-service(value="") Тип услуги 1
 							option.option-service(value="") Тип услуги 2
 							option.option-service(value="") Тип услуги 3
 					label
 						select.select-service(name="service" required)
-							option.option-service(value="" disabled) Услуга
+							option.option-service.jq-select-multiple.disabled(value="") Услуга
 							option.option-service(value="" ) Услуга 1
 							option.option-service(value="" ) Услуга 2
 							option.option-service(value="" ) Услуга 3
@@ -39,3 +40,5 @@ header.header
 						input.input-tel(type="text" required placeholder="Ваш телефон")
 					input.input-sbt(type="submit" value="Рассчитать стоимость")  
 include _services
+include _safe
+include _easy

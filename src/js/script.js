@@ -1,1 +1,7 @@
-console.log('hello from script.js');
+(function($) {
+	$(function() {
+
+	  $('.select-service').styler();
+
+	});
+})(jQuery);
