@@ -1,13 +1,18 @@
 .footer__top-wrap{
 	@include clearfix();
 }
+.logo-wrap{
+	margin-bottom: 15px;
+}
 .footer__left-block{
+	padding-top: 30px;
 	float: left;
-	width: 50%;
+	width: 55%;
 }
 .footer__right-block{
+	padding-top:35px;
 	float: right;
-	width: 50%;
+	width: 45%;
 	@include clearfix();
 }
 .menu-wrap{
@@ -20,12 +25,27 @@
 	&__item{
 		display: inline-block;
 		margin-right: 30px;
+		position: relative;
+	}
+	// &__item:before{
+	// 	content: "\2022";
+	// 	font-size: 10px;
+	// 	position: absolute;
+	// 	left: -5px;
+	// 	top:5px;
+	// }
+	&__item:after{
+		content: "\2022";
+		font-size: 9px;
+		position: absolute;
+		right: -20px;
+		top: 5px;
 	}
 	&__item:last-child{
 		margin-right: 0;
 	}
-	&__item:after{
-		content:"";
+	&__item:last-child:after{
+		display: none;
 	}
 	&__link{
 		&:hover{
@@ -34,6 +54,9 @@
 	}
 }
 .social-block{
+	&__wrap{
+		float: left;
+	}
 	&__list{
 
 	}
@@ -41,6 +64,10 @@
 		display: inline-block;
 		width: 52px;
 		height: 52px;
+		margin-left: 5px;
+	}
+	&__item:first-child{
+		margin-left: 0;
 	}
 	&__link_fb{
 		background: url(../img/fb.png)
@@ -59,11 +86,14 @@
 	}
 }
 .pay-block{
+	&__wrap{
+		float: right;
+	}
 	&__list{
 
 	}
 	&__item{
-
+		margin-bottom: 13px;
 	}
 	&__link_mc-visa{
 		background: url(../img/mc-visa.png);	
@@ -83,5 +113,59 @@
 	&__link{
 		display: block;
 		background-size:cover;
+		background-repeat: no-repeat;
 	}
+}
+.social-block__title,
+.pay-block__title{
+	margin-bottom: 20px;
+	@include font-size(24px);
+	font-weight: bold;
+}
+.usligi{
+	&__list{
+
+	}
+	&__item{
+		font-weight: bold;
+		@include font-size(20px);
+		margin-bottom: 10px;
+	}
+	&__link{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.poduslugi{
+	&__list{
+
+	}
+	&__item{
+		font-weight: normal;
+		@include font-size(18px);
+	}
+	&__link{
+		padding-left: 5px;
+		&:hover{
+			text-decoration: underline;
+		}
+		&:before{
+			content:"-";
+		}
+	}
+}
+.uslugi__wrap{
+	width: 100%;
+	text-align: justify;
+}
+.uslugi__item-block{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	text-align: left;
+}
+.justify{
+	display: inline-block;
+	width: 100%;
 }
