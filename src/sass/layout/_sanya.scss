@@ -1,0 +1,156 @@
+.every-day{
+	background: url('../img/bg_all-day.jpg') center center no-repeat;
+	position: relative;
+	min-height: 650px;
+	color: #fff;
+	.every-day__title,
+	.amount {
+	    font-family: 'etelkaregregular';
+		font-size: 60px;
+		text-align: center;
+	}
+	.every-day__title{
+		margin: 45px 0 55px;
+	}
+}
+.every-day__content{
+	text-align: center;
+	.every-day__item{
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		min-width: 150px;
+		margin-left: 1%;
+		&.bottom{
+			margin-top: 60px;
+		}
+	}
+	.amount{
+		background: url('../img/romb.png') center center no-repeat;
+		display: block;
+		height: 149px;
+		line-height: 150px;
+		vertical-align: middle;
+	}
+	.text {
+		max-width: 200px;
+		font-size: 16px;
+	}
+}
+
+.every-day__make-order{
+	text-align: center;
+	margin-top: 70px;
+	padding-bottom: 20px;
+	.make-order{
+		display: inline-block;
+	    font-family: 'etelkaregregular';
+		padding: 13px 22px;
+		background: $green;
+		color: #fff;
+		font-size: 30px;
+		line-height: 33px;
+		text-transform: uppercase;
+		@include border-radius(14px);
+		&:hover{
+		color: $green;
+		background: #fff;
+		}
+	}
+}
+.about-company{
+	padding: 50px 0 30px;
+}
+
+.about-company__title{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.about-company__content{
+	p{
+		margin-bottom: 20px;
+	}
+}
+.hidden_block{
+	.init_hide{
+		text-align: center;
+		@include border-radius(4px);
+		display: block;
+		width: 200px;
+		cursor: pointer;
+		margin: 0 auto;
+		color: $green;
+		font-weight: 600;
+		font-size: 18px;
+		position: relative;
+		margin: 20px auto 20px;
+		&:hover{
+			background: $green;
+			color: #fff;
+		}
+		&:after{
+			position: absolute;
+			content: '';
+			display: block;
+			left: 50%;
+			margin-left: -10px;
+			top: 100%;
+			border: 12px solid transparent;
+			border-top: 19px solid $green;
+		}
+		&:before{
+			display: none;
+			position: absolute;
+			content: '';
+			left: 50%;
+			margin-left: -10px;
+			bottom: 100%;
+			border: 12px solid transparent;
+			border-bottom: 19px solid $green;
+		}
+		&.active{
+			margin: 20px auto 0;
+			&:after{
+				display: none;
+			}
+			&:before{
+				display: block;
+			}
+		}
+	}
+	.hidden_content{
+		display: none;
+	}
+}
+
+@include breakpoint(1100) {
+	.every-day__content{
+		.every-day__item{
+			&.bottom{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+@include breakpoint(700) {
+	.every-day{
+		.every-day__title{
+			margin: 20px 0 20px;
+		}
+		.every-day__make-order{
+			margin-top: 20px;
+		}
+		.every-day__title{
+			font-size: 35px;
+		}
+		.amount{
+			font-size: 35px;
+		}
+		.every-day__make-order .make-order{
+			font-size: 25px;
+		}
+	}
+}

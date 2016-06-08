@@ -1,0 +1,60 @@
+.h2{
+	 font-family: 'etelkaregregular';
+	 @include font-size(40px);
+	 position: relative;
+	 margin-bottom: 45px;
+	 &:before{
+			content: '';
+			position: absolute;
+			border-left: 8px solid $green;
+			left: -18px;
+			bottom: 0;
+			top: 0;
+		}
+}
+.partners__wrap{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.partners__item{
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+.partners__img{
+	display: block;
+	margin:0 auto;
+}
+// Call - center
+.call-center{
+	padding-top: 100px;
+	padding-bottom: 80px;
+	border-top: 3px solid #6a6a6a;
+	border-bottom: 3px solid #6a6a6a;
+	text-align: center;
+	background: rgba(125, 140, 146, 0.1)
+}
+.call-title-big {
+	@include font-size(47px);
+	margin-bottom: 80px;
+}
+.call-title-small{
+	@include font-size(30px);
+	margin-bottom: 70px;
+}
+.call-button{
+	@include font-size(31px);
+	color: $green;
+	&__link{
+		border:3px solid $green;
+		@include border-radius(7px);	
+		padding: 15px 85px;
+		@include transition(.25s);
+	}
+	&__link:hover{
+		color:#fff;
+		background: $green;
+	}
+
+}
