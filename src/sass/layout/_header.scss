@@ -24,10 +24,13 @@
 		padding-bottom: 35px;
 	}
 }
+.header__logo-link{
+	display: inline-block;
+}
 .banner{
 	&__title-wrap{
+		padding-left: 18px;
 		color: $grey;
-		margin-left: 18px;
 		margin-top: 70px;
 		width: 61%;
 		position: relative;
@@ -36,7 +39,7 @@
 			content: '';
 			position: absolute;
 			border-left: 8px solid $green;
-			left: -18px;
+			left: 0;
 			bottom: 0;
 			top: 0;
 		}
@@ -47,22 +50,24 @@
 		background: #fff;
 		margin-bottom: 15px;
 	    padding: 5px 10px;
+	    display: inline-block;
 	}
 	&-sub-title{
 		@include font-size(18px);
 		font-family: 'etelka_probold';
+		display: block;
 	}
 	&__form-wrap{
-		margin-left: 18px;
+		padding-left: 18px;
 		width: 22%;
 		position: relative;
 		&:before{
 			content: '';
 			position: absolute;
 			border-left: 8px solid $green;
-			left: -18px;
 			bottom: 0;
 			top: 0;
+			left: 0;
 		}
 		.count-price select{
 			display: none !important;
@@ -91,6 +96,9 @@
 				right: 15px;
 				top: 21px;	
 			}
+		}
+		.jq-selectbox__dropdown{
+			left: -3px;
 		}
 		.select-service,
 		.input-tel{

@@ -3,11 +3,12 @@
 	 @include font-size(40px);
 	 position: relative;
 	 margin-bottom: 45px;
+	 padding-left: 18px;
 	 &:before{
 			content: '';
 			position: absolute;
 			border-left: 8px solid $green;
-			left: -18px;
+			left: 0;
 			bottom: 0;
 			top: 0;
 		}
