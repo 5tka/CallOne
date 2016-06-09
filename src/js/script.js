@@ -24,5 +24,5 @@ $(window).resize(function() {
     if (w > 950) {
         $('.nav__list').removeAttr('style');
         $('#nav-icon4').removeClass('open');
-    }
+    } //
 });
