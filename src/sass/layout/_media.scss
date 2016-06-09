@@ -61,6 +61,14 @@
 			margin-bottom: 20px;
 		}
 	}
+	.safe__item-title span:before{
+		display: none;
+	}
+	.safe__item{
+		padding-left: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
 }
 @include breakpoint(950){
 	.header{
@@ -254,8 +262,12 @@
 	// 		text-align: center;
 	// 	}
 	// }
+
 		.uslugi__item-block{
 		width: 100%;
+	}
+	.services__item{
+		margin-left: 0;
 	}
 }
 @include breakpoint(440){
@@ -289,8 +301,18 @@
 		width: 100%;
 	}
 }
+@include breakpoint(420){
+	.footer-menu__item{
+		display: block;
+		margin-right: 0;
+		margin-bottom: 7px;
+	}
+	.footer-menu__item:after{
+		display: none;
+	}
+};
 @include breakpoint(400){
 	.banner-title{
-		@include font-size(27px);
+		@include font-size(25px);
 	}
 }

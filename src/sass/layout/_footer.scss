@@ -137,7 +137,11 @@
 		font-weight: bold;
 		@include font-size(20px);
 		margin-bottom: 35px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
+
 	&__link{
 		color: #5f6060;
 		&:hover{
@@ -164,7 +168,7 @@
 	}
 }
 .uslugi__wrap{
-	padding: 58px 0 18px 0;
+	padding: 60px 0 18px 0;
 	width: 100%;
 	text-align: justify;
 }
