@@ -29,6 +29,7 @@
 		display: inline-block;
 		margin-right: 30px;
 		position: relative;
+		color: #5f6060;
 	}
 	// &__item:before{
 	// 	content: "\2022";
@@ -159,6 +160,7 @@
 	}
 }
 .uslugi__wrap{
+	padding-top: 58px;
 	width: 100%;
 	text-align: justify;
 }
@@ -172,4 +174,16 @@
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 20px;
+}
+.footer__top{
+	position: relative;
+	padding-bottom: 10px;
+	&:after{
+		content: '';
+		position: absolute;
+		background: url(../img/icons/pattern.png) repeat-x;
+		height: 6px;
+		width: 100%;
+		bottom: 0;
+	}
 }
