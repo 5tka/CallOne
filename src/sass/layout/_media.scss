@@ -7,7 +7,6 @@
 		}
 	}
 }
-
 @include breakpoint(1040){
 	.h2{
 		position: relative;
@@ -37,6 +36,10 @@
 		}
 	}
 	.safe{
+		&__about{
+			width: 100%;
+			text-align: center;
+		}
 		&__items-wrap{
 			margin: 0 auto;
 			float: none;
@@ -53,6 +56,9 @@
 		&__item{
 			text-align: center;
 			margin-bottom: 40px !important;
+		}
+		&__link{
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -188,6 +194,9 @@
 
 @include breakpoint(700){
 	.banner__title-wrap{
+		width: 100% !important;
+	}
+	.banner-title{
 		width: 100%;
 	}
 	.easy__item{
