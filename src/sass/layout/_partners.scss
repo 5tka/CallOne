@@ -44,7 +44,7 @@
 .call-title-big {
 	font-family: 'etelkaregregular';
 	@include font-size(47px);
-	margin-bottom: 70px;
+	margin-bottom: 65px;
 	color: #6a6a6a;
 	.green-text{
 		color: #61a327;
@@ -52,7 +52,7 @@
 }
 .call-title-small{
 	@include font-size(30px);
-	margin-bottom: 70px;
+	margin-bottom: 65px;
 	color: #6a6a6a;
 }
 .call-button{
@@ -63,6 +63,7 @@
 		@include border-radius(14px);	
 		padding: 7px 68px;
 		@include transition(.25s);
+		display: inline-block;
 	}
 	&__link:hover{
 		color:#fff;
