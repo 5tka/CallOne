@@ -58,6 +58,9 @@
 }
 @include breakpoint(950){
 	.header{
+		&__top-line{
+			line-height: inherit;
+		}
 		&__logo-wrap{
 			float: none;
 			display: inline-block;
@@ -72,12 +75,69 @@
 			width: 50%;
 		}
 	}
-	.nav{
-		&__item{
-			display: block;
-			text-align: center;
-		}
+	// .nav{
+	// 	&__item{
+	// 		display: block;
+	// 		text-align: center;
+	// 	}
+	// }
+	.header__nav-wrap {
+		position: relative;
+		min-height: 75px;
+		z-index: 2;
+	}	
+	.header__nav-wrap ul {
+		width: 220px;
+		padding: 5px 0;
+		position: absolute;
+	    top: 10px;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #FAFAFA url(images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
 	}
+	.header__nav-wrap li {
+		display: none; /* скрыть все <li> пункты */
+		margin: 0;
+	}
+	.header__nav-wrap .current {
+		display: block; /* показывать только текущие активные <li> пункты */
+	}
+	.header__nav-wrap a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.header__nav-wrap .current a {
+		background: none;
+		color: #666;
+	}
+
+	/* при наведении на пункты меню */
+	.header__nav-wrap ul:hover {
+		background-image: none;
+	}
+	.header__nav-wrap ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.header__nav-wrap ul:hover .current {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	/* адаптивное меню справа */
+	.header__nav-wrap.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* адаптивное меню по центру */
+	.header__nav-wrap.center ul{
+		left: 50%;
+		margin-left: -110px;
+	}
+
 }
 @include breakpoint (920){
 	.footer__left-block{
@@ -186,8 +246,9 @@
 		&__logo-wrap{
 			float: none;
 			display: block;
+			width: 100%;
 			text-align: center;
-			margin: 0 auto;
+		    margin: 25px auto 5px;
 		}
 		&__nav-wrap{
 			float: none;
@@ -205,6 +266,13 @@
 	}
 }
 @include breakpoint(440){
+	.header__nav-wrap ul {
+		width: 80%;
+	}
+	.header__nav-wrap.center ul{
+		left: 0;
+		margin-left: 10%;
+	}
 	.social-block__wrap{
 		float:none;
 		width: 100%;

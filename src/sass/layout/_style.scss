@@ -9,13 +9,7 @@ h1{
 	@include clearfix();
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 0 10px;
-}
-.container-short{
-	@include clearfix();
-	max-width: 1040px;
-	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 @include breakpoint(1024){
 	h1{

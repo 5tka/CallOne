@@ -1,4 +1,7 @@
 .header{
+	.menu-adapt{
+		display: none;
+	}
 	padding-bottom: 45px;
 	&__top-line{
 		@include clearfix();
