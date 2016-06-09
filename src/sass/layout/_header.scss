@@ -20,7 +20,7 @@
 	}
 	&__banner-wrap{
 		min-height: 580px;
-		background: url('../img/header_bg.jpg'); 
+		background: url('../img/header_bg.jpg');
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -36,7 +36,7 @@
 }
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 40px;
-  height: 35px;
+  height: 28px;
   position: relative;
   margin: 0px auto;
   -webkit-transform: rotate(0deg);
@@ -71,7 +71,7 @@
 #nav-icon4 {
 }
 
-#nav-icon4 span:nth-child(1) {
+#nav-icon4 .first {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -79,7 +79,7 @@
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
+#nav-icon4 .second {
   top: 10px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -87,7 +87,7 @@
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(3) {
+#nav-icon4 .last {
   top: 20px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -95,7 +95,7 @@
   transform-origin: left center;
 }
 
-#nav-icon4.open span:nth-child(1) {
+#nav-icon4.open .first {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -104,12 +104,12 @@
   left: 0px;
 }
 
-#nav-icon4.open span:nth-child(2) {
+#nav-icon4.open .second {
   width: 0%;
   opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
+#nav-icon4.open .last {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -190,7 +190,7 @@
 				height: 9px;
 				background: url('../img/icons/arrow-b.png');
 				right: 15px;
-				top: 21px;	
+				top: 21px;
 			}
 		}
 		.jq-selectbox__dropdown{
@@ -216,7 +216,7 @@
 			&::-webkit-input-placeholder {color:#6a6a6a;}
 			&::-moz-placeholder          {color:#6a6a6a;}
 			&:-moz-placeholder           {color:#6a6a6a;}
-			&:-ms-input-placeholder      {color:#6a6a6a;} 
+			&:-ms-input-placeholder      {color:#6a6a6a;}
 			color:#6a6a6a;
 			font-family: 'etelkaregregular';
 		}
@@ -232,7 +232,7 @@
 				background: #fff;
 				&:hover{
 					border-bottom: 3px solid $green;
-					color: $green;		
+					color: $green;
 
 				}
 			}

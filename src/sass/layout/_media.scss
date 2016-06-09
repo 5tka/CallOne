@@ -30,7 +30,7 @@
 			width: 80%;
 			text-align: center;
 			margin: 0 auto;
-		}	
+		}
 		&__item{
 			margin-bottom: 20px;
 		}
@@ -78,7 +78,7 @@
 @include breakpoint(950){
 	.header{
 		&__top-line{
-			padding-top: 30px;
+			padding-top: 23px;
 			line-height: inherit;
 		}
 		&__logo-wrap{
@@ -104,20 +104,21 @@
 		display: none;
 	}
 	.current{
+		margin-top: 5px;
 	    display: inline-block;
 	    float: right;
 	}
 	.header__nav-wrap {
 		position: relative;
 		z-index: 2;
-	}	
+	}
 	.header__nav-wrap ul {
 		width: 100%;
 		padding: 5px 0;
 		border-radius: 5px;
 	}
 	.header__nav-wrap li {
-		display: block; 
+		display: block;
 		margin: 8px 0;
 	}
 	.nav__link-phone {
@@ -138,14 +139,14 @@
 			text-align: center;
 		}
 		.menu-wrap{
-			margin: 0 auto;	
+			margin: 0 auto;
 			max-width:100%;
 			text-align: center;
 		}
 	}
 	.footer__right-block{
 		float:none;
-		width: 100%;	
+		width: 100%;
 	}
 }
 @include breakpoint(800){
@@ -156,7 +157,7 @@
 @include breakpoint(750){
 	.call-center{
 		padding-top: 30px;
-		padding-bottom: 30px; 
+		padding-bottom: 30px;
 	}
 	.partners__item{
 		display: block;
@@ -199,26 +200,14 @@
 	}
 	.easy__item{
 		margin-bottom: 50px !important;
-		&:after{
-			content: '';
-			position: absolute;
-			background: url('../img/icons/arrow-b.png') 0 0 no-repeat;
-			width: 18px;
-			height: 36px;
-			background-repeat: repeat-y;
-			left: 50%;
-			margin-left: -9px;
-			margin-top: 5px;
-		}
 		&:last-child{
 			margin-bottom: 20px !important;
 			&:after{
 				display: none;
-
 			}
 		}
 
-			
+
 	}
 	.poduslugi__item{
 		font-size: 18px;
@@ -259,6 +248,21 @@
 			width: 320px;
 		    margin: 0 auto;
 		}
+}
+@include breakpoint(530){
+	.easy__item{
+			&:after{
+			content: '';
+			position: absolute;
+			background: url('../img/icons/arrow-b.png') 0 0 no-repeat;
+			width: 18px;
+			height: 36px;
+			background-repeat: repeat-y;
+			left: 50%;
+			margin-left: -9px;
+			margin-top: 5px;
+		}
+	}
 }
 @include breakpoint(500){
 	.safe__items-wrap{
@@ -322,7 +326,7 @@
 		margin-bottom: 35px;
 		.pay-block__link{
 			margin:0 auto;
-		}	
+		}
 	}
 	.uslugi__item-block{
 		width: 100%;

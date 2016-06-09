@@ -4,17 +4,17 @@ header.header
 			.header__logo-wrap
 				a(href="#").header__logo-link
 					img(src="img/logo.png", alt="")
-				.current 
+				.current
 						#nav-icon4
-							span
-							span
-							span
+							span.first
+							span.second
+							span.last
 			.header__nav-wrap
 				ul.nav__list
 					li.nav__item
 						a.nav__link.nav__link_active(href="#") Наши услуги
 					li.nav__item
-						a.nav__link(href="#") Вопрос и ответ 
+						a.nav__link(href="#") Вопрос и ответ
 					li.nav__item
 						a.nav__link(href="#") Контакты
 					li.nav__item
@@ -24,11 +24,11 @@ header.header
 		.container
 			.banner__title-wrap
 				h1.banner-title
-					| Устали контролировать отдел  
+					| Устали контролировать отдел
 				h1.banner-title
 					| продаж и операторов?
 				span.banner-sub-title
-					| У вас есть миллион причин не 
+					| У вас есть миллион причин не
 					| делать этого. Например, мы.
 			.banner__form-wrap
 				form.count-price.jq-select-multiple
@@ -46,7 +46,7 @@ header.header
 							option.option-service.option-service-h Услуга 3
 					label
 						input.input-tel(type="text" required placeholder="Ваш телефон")
-					input.input-sbt(type="submit" value="Рассчитать стоимость")  
+					input.input-sbt(type="submit" value="Рассчитать стоимость")
 include _services
 include _safe
 include _easy
