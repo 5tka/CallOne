@@ -147,7 +147,8 @@
 	}
 	&-sub-title{
 		@include font-size(18px);
-		font-family: 'etelka_probold';
+		font-family: 'etelkaregregular';
+		font-weight: bold;
 		display: block;
 	}
 	&__form-wrap{
