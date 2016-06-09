@@ -213,11 +213,11 @@
 			cursor: default;
 		}
 		input[placeholder] {
-			::-webkit-input-placeholder {color:#000;}
-			::-moz-placeholder          {color:#000;}
-			:-moz-placeholder           {color:#000;}
-			:-ms-input-placeholder      {color:#000;} 
-			color:#000;
+			&::-webkit-input-placeholder {color:#6a6a6a;}
+			&::-moz-placeholder          {color:#6a6a6a;}
+			&:-moz-placeholder           {color:#6a6a6a;}
+			&:-ms-input-placeholder      {color:#6a6a6a;} 
+			color:#6a6a6a;
 			font-family: 'etelkaregregular';
 		}
 		.option-service{
