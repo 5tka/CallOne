@@ -101,7 +101,7 @@
 			}
 		}
 		&-title{
-			min-height: 50px;
+			margin-bottom: 5px;
 			.span{
 				@include font-size(30px);
 				line-height: 23px;
