@@ -65,7 +65,7 @@
 @include breakpoint(950){
 	.header{
 		&__top-line{
-			padding-top: 20px;
+			padding-top: 30px;
 			line-height: inherit;
 		}
 		&__logo-wrap{
@@ -74,14 +74,14 @@
 		    width: 100%;
 			vertical-align: middle;
 			text-align: center;
+			@include clearfix();
 		}
 		&__nav-wrap{
 			float: none;
 			display: inline-block;
 			vertical-align: middle;
 			width: 100%;
-			text-align: center;
-			padding: 15px 0;
+			text-align: center; //
 		}
 		&__logo-link{
 		    float: left;
@@ -235,7 +235,7 @@
 			display: block;
 			width: 100%;
 			text-align: center;
-		    margin: 25px auto 5px;
+		    margin: 0px auto;
 		}
 		&__nav-wrap{
 			float: none;
