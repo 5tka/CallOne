@@ -44,6 +44,8 @@
 			margin: 0 auto;
 			float: none;
 			text-align: center;
+		    margin-left: -40px;
+		    width: 100%;
 		}
 		&__img{
 			width: 250px;
@@ -56,6 +58,8 @@
 		&__item{
 			text-align: center;
 			margin-bottom: 40px !important;
+		    margin-left: 40px;
+		    width: 35%;
 		}
 		&__link{
 			margin-bottom: 20px;
@@ -66,8 +70,8 @@
 	}
 	.safe__item{
 		padding-left: 0;
+
 		margin-right: 0;
-		margin-left: 0;
 	}
 }
 @include breakpoint(950){
@@ -181,6 +185,11 @@
 }
 
 @include breakpoint(700){
+	.easy{
+		&__items-wrap{
+			width: 100%;
+		}
+	}
 	.banner__title-wrap{
 		width: 100% !important;
 	}
@@ -231,7 +240,19 @@
 	.uslugi__wrap{
 		text-align: center;
 	}
-
+	.safe{
+		&__items-wrap{
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		    margin-left: 0;
+		    width: 100%;
+		  }
+	}
+	.safe__item{
+			width: 320px;
+		    margin: 0 auto;
+		}
 }
 @include breakpoint(500){
 	.safe__items-wrap{
