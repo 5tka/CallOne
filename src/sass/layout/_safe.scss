@@ -7,7 +7,7 @@
 		color: $green;
 		margin-top: 10px;
 		text-align: right;
-		width: 93%;
+		width: 94%;
 		@include font-size(24px);
 	}
 	&__link{
@@ -19,6 +19,7 @@
 	}
 	&__img{
 		float: right;
+		margin-top: -45px;
 	}
 	&__items-wrap{
 		float: left;

@@ -1,6 +1,6 @@
 .services{
 	position: relative;
-	min-height: 300px;
+	padding-bottom: 10px;
 	position: relative;
 	&:after{
 		content: '';
@@ -30,7 +30,7 @@
 			margin-left: 0;
 		}
 		&-img{
-			margin-bottom: 8px;
+			margin-bottom: 5px;
 			height: 148px;
 			width: 148px;
 			display: inline-block;
@@ -42,14 +42,16 @@
 			}
 		}
 		&-title{
-			margin-bottom: 9px;
-			min-height: 52px;
+			min-height: 36px;
+			line-height: 18px;
+			margin-bottom: 5px;
 			.h3{
 				@include font-size(20px);
 				color: #717171;
 			}
 		}
 		&-dscr{
+			line-height: 13px;
 			.span{
 				@include font-size(14px);
 				color: #acacac;

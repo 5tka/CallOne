@@ -42,19 +42,25 @@
 	background: rgba(125, 140, 146, 0.1)
 }
 .call-title-big {
+	font-family: 'etelkaregregular';
 	@include font-size(47px);
 	margin-bottom: 80px;
+	color: #6a6a6a;
+	.green-text{
+		color: #61a327;
+	}
 }
 .call-title-small{
 	@include font-size(30px);
 	margin-bottom: 70px;
+	color: #6a6a6a;
 }
 .call-button{
 	@include font-size(31px);
 	color: $green;
 	&__link{
 		border:3px solid $green;
-		@include border-radius(7px);	
+		@include border-radius(14px);	
 		padding: 15px 85px;
 		@include transition(.25s);
 	}

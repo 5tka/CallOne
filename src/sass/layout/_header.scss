@@ -24,7 +24,7 @@
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-bottom: 35px;
+		padding-bottom: 67px;
 	}
 }
 .header__logo-link{
@@ -86,11 +86,12 @@
 			opacity: 0 !important;
 		}
 		.jq-selectbox__select-text{
-			padding: 10px;
+			padding: 6px;
 			font-family: 'etelkaregregular';
 		}
 		.jq-selectbox{
 			padding: 0 !important;
+			font-size: 25px !important;
 		}
 		.jq-selectbox__select{
 			&:after{
@@ -109,18 +110,23 @@
 		}
 		.select-service,
 		.input-tel{
-			@include font-size(21px);
+			@include font-size(25px);
 			margin-bottom: 20px;
 			background: none;
 			border: 3px solid #fff;
-			padding: 10px;
+			padding: 6px;
 			cursor: pointer;
 			outline: none;
 			color: $grey;
 			width: 240px;
 		}
-		.input-tel::-webkit-input-placeholder{
-			color: $grey;
+		input[placeholder] {
+			::-webkit-input-placeholder {color:#000;}
+			::-moz-placeholder          {color:#000;}
+			:-moz-placeholder           {color:#000;}
+			:-ms-input-placeholder      {color:#000;} 
+			color:#000;
+			font-family: 'etelkaregregular';
 		}
 		.option-service{
 			@include font-size(22px);
@@ -145,6 +151,7 @@
 			color: #fff;
 			cursor: pointer;
 			padding: 11px;
+			font-family: 'etelkaregregular';
 			border: none;
 			background: $green;
 			outline: none;
