@@ -13,10 +13,11 @@
 	}
 	.call-button{
 		text-align: center;
+		margin-bottom: 30px;
 	}
 	.call-button__link{
 		@include font-size(26px);
-		padding: 0 5px;
+		padding: 8px 5px;
 		display: inline-block;
 	}
 	&__item{
@@ -45,7 +46,7 @@
 			width: 150px;
 		    line-height: 150px; 
 			padding: 25px;
-			border-radius: 50%;
+			border-radius: 50%;	
 			display: inline-block;
 			border: 2px dotted $green;
 			margin-bottom: 10px;

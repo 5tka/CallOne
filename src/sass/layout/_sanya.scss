@@ -56,9 +56,10 @@
 		line-height: 33px;
 		text-transform: uppercase;
 		@include border-radius(14px);
+		@include transition(.25s);
 		&:hover{
-		color: $green;
-		background: #fff;
+			color: $green;
+			background: #fff;
 		}
 	}
 }
