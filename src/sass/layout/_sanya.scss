@@ -65,14 +65,17 @@
 }
 .about-company{
 	padding: 50px 0 30px;
+	font-family: 'etelkaregregular';
 }
 
 .about-company__title{
 	font-size: 18px;
-	font-weight: 600;
+	color: #8a8a8a;
 	margin-bottom: 20px;
+
 }
 .about-company__content{
+	font-size: 14px;
 	p{
 		margin-bottom: 20px;
 	}
