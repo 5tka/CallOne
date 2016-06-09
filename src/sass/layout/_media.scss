@@ -149,6 +149,9 @@
 			margin-top: 0;
 		}
 	}
+	.every-day__item{
+		margin-bottom: 15px;
+	}
 	.call-button__link{
 		padding: 10px 30px;
 		@include font-size(20px);
@@ -191,6 +194,9 @@
 
 			}
 		}
+	}
+	.poduslugi__item{
+		font-size: 18px;
 	}
 	.every-day{
 		.every-day__title{

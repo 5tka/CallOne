@@ -39,7 +39,7 @@
 	border-top: 3px solid #6a6a6a;
 	border-bottom: 3px solid #6a6a6a;
 	text-align: center;
-	background: rgba(125, 140, 146, 0.1)
+	background: #fbfbfb;
 }
 .call-title-big {
 	font-family: 'etelkaregregular';
@@ -61,7 +61,7 @@
 	&__link{
 		border:3px solid $green;
 		@include border-radius(14px);	
-		padding: 15px 85px;
+		padding: 7px 68px;
 		@include transition(.25s);
 	}
 	&__link:hover{

@@ -208,6 +208,9 @@
 			color: $grey;
 			width: 240px;
 		}
+		.input-tel{
+			cursor: default;
+		}
 		input[placeholder] {
 			::-webkit-input-placeholder {color:#000;}
 			::-moz-placeholder          {color:#000;}
