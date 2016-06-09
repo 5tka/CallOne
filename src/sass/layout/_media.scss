@@ -81,7 +81,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: 100%;
-			text-align: center; //
+			text-align: center;
 		}
 		&__logo-link{
 		    float: left;
@@ -133,6 +133,11 @@
 	.footer__right-block{
 		float:none;
 		width: 100%;	
+	}
+}
+@include breakpoint(800){
+	.uslugi__item-block{
+		width: 45%;
 	}
 }
 @include breakpoint(750){
@@ -218,9 +223,7 @@
 	.uslugi__wrap{
 		text-align: center;
 	}
-	.uslugi__item-block{
-		width: 45%;
-	}
+
 }
 @include breakpoint(500){
 	.safe__items-wrap{
@@ -251,6 +254,9 @@
 	// 		text-align: center;
 	// 	}
 	// }
+		.uslugi__item-block{
+		width: 100%;
+	}
 }
 @include breakpoint(440){
 	.banner__title-wrap{
