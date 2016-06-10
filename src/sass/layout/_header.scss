@@ -117,7 +117,14 @@
   bottom: 0px;
   left: 0px;
 }
-
+// SELECT 
+form.count-price{
+	label{
+		text-align: center;
+		width: 100%;
+		color:#ffffff;
+	}
+}
 .banner{
 	&__title-wrap{
 		padding-left: 18px;
@@ -153,15 +160,21 @@
 	}
 	&__form-wrap{
 		padding-left: 18px;
-		width: 22%;
+		margin-left: 25px;
+		padding: 10px;
+		width: 270px;
 		position: relative;
+		background: rgba(95,96,96,.5);
+		border-radius: 7px;
 		&:before{
 			content: '';
 			position: absolute;
-			border-left: 8px solid $green;
-			bottom: 0;
-			top: 0;
-			left: 0;
+			bottom: 10px;
+			top: 10px;
+			left: -25px;
+			width: 8px;
+			background-size: 20px;
+			background: #61a327;
 		}
 		.count-price select{
 			display: none !important;
@@ -194,6 +207,7 @@
 			}
 		}
 		.jq-selectbox__dropdown{
+			width: 100% !important;
 			top: 50px;
 			left: -3px;
 		}
@@ -207,17 +221,18 @@
 			cursor: pointer;
 			outline: none;
 			color: $grey;
-			width: 240px;
+			width: 250px;
 		}
 		.input-tel{
 			cursor: default;
 		}
 		input[placeholder] {
-			&::-webkit-input-placeholder {color:#6a6a6a;}
-			&::-moz-placeholder          {color:#6a6a6a;}
-			&:-moz-placeholder           {color:#6a6a6a;}
-			&:-ms-input-placeholder      {color:#6a6a6a;}
-			color:#6a6a6a;
+			text-align: center;
+			&::-webkit-input-placeholder {color:#ffffff;}
+			&::-moz-placeholder          {color:#ffffff;}
+			&:-moz-placeholder           {color:#ffffff;}
+			&:-ms-input-placeholder      {color:#ffffff;}
+			color:#ffffff;
 			font-family: 'etelkaregregular';
 		}
 		.option-service{
@@ -225,11 +240,12 @@
 			cursor: pointer;
 			padding: 10px;
 			outline: none;
-			color: $grey;
-			width: 240px;
+			color: #ffffff;
+			width: 250px;
 			border-bottom: 3px solid #fff;
 			&-h{
 				background: #fff;
+				color: $grey;
 				&:hover{
 					border-bottom: 3px solid $green;
 					color: $green;
@@ -239,7 +255,7 @@
 		}
 		.input-sbt{
 			@include font-size(20px);
-			width: 240px;
+			width: 250px;
 			color: #fff;
 			cursor: pointer;
 			padding: 11px;
@@ -255,6 +271,7 @@
 		}
 	}
 }
+
 .nav{
 	&__item{
 		display: inline-block;
