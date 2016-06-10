@@ -249,6 +249,11 @@
 		    margin: 0 auto;
 		}
 }
+@include breakpoint(590){
+	.banner__form-wrap{
+		width: 95%;
+	}
+}
 @include breakpoint(530){
 	.easy__item{
 			&:after{
