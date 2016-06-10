@@ -195,6 +195,9 @@ form.count-price{
 			padding: 0 !important;
 			font-size: 25px !important;
 		}
+		.jq-selectbox ul{
+			width: 250px;
+		}
 		.jq-selectbox__select{
 			&:after{
 				content: '';
