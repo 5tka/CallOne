@@ -293,19 +293,32 @@ form.count-price{
 		}
 		&:hover{
 			color: $green;
+			border: 2px dotted $green;
+			border-radius: 10px;
+		}
+		&-tel{
+			@include font-size(20px);
+			padding: 0 12px;
+			font-family: 'etelkaregregular';
+			color: #5f6060;
+			&:hover{
+				color: $green;
+				border:none;
+			}
 		}
 		&-phone{
+			line-height: 14px;
 			position: absolute;
-			display: inline-block;
-			bottom: 0;
+			top: 48px;
 			right: 14px;
-			top: 20px;
-			color: #4c00f8;
-			@include font-size(14px);
+			color: #5f6060;
+			font-size: 14px;
 			text-decoration: underline;
-			font-family: 'etelkaregregular';
+			font-family: etelkaregregular;
+		}
 			&:hover{
 				text-decoration: none;
+				color: $green;
 			}
 		}
 	}
