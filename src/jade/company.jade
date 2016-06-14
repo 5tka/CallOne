@@ -1,9 +1,174 @@
 extends _layout.jade
 block header
-	| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ad mollitia sint odit! Voluptatum, alias corporis ab iure, laudantium ipsam aspernatur quasi, suscipit culpa distinctio quos, molestiae quaerat? Molestiae, veniam.
+	header.header_company
+		.header__top-line
+			.container
+				.header__logo-wrap
+					a(href="#").header__logo-link
+						img(src="img/logo.png", alt="")
+					.current
+							#nav-icon4
+								span.first
+								span.second
+								span.last
+				.header__nav-wrap
+					ul.nav__list
+						li.nav__item
+							a.nav__link.nav__link_active(href="#") Наши услуги
+						li.nav__item
+							a.nav__link(href="#") Вопрос и ответ
+						li.nav__item
+							a.nav__link(href="#") Контакты
+						li.nav__item
+							a.nav__link-make(href="#") Заказать услугу
 block main
-	.div 
-		| Lorem ipsum dolor sit amet, consectetur 
-		| adipisicing elit. Commodi, atque!
+	section.company
+		.container
+			h2.h2
+				| Call One - это работает!
+			.company__items-wrap
+				.company__item
+					.company__img
+						img(src="img/icons/hands.png", alt="")
+					.company__title
+						span.span
+							| Call One как он есть 
+					.company__dscr
+						p.p
+							| Мы в Сall One стремимся 
+							| сделать услуги профессионального 
+							| колл-центра доступными для широкой 
+							| аудитории, а не роскошью для богатых. 
+							| Кроме этого, мы обеспечиваем 
+							| работой провереsнных специалистов, 
+							| которые любят бесперебойно звонить. 
+							| Связывая вас и профессиональных 
+							| операторов, мы хотим помочь вам 
+							| продавать еще больше.
+				.company__item
+					.company__img
+						img(src="img/icons/persons.png", alt="")
+					.company__title
+						span.span
+							| Как это работает
+					.company__dscr
+						p.p
+							| Вы указываете нам что вы хотите 
+							| получить от операторов или 
+							| колл-менеджеров, мы прописываем 
+							| сценарии переговоров и изучаем 
+							| структуру проекта. Мы назначаем 
+							| проверенного специалиста на ваш 
+							| заказ. В день назначения старта, 
+							| наш оператор звонит вам, вы 
+							| проверяете его, если вас все 
+							| устраивает, мы начинаем 
+							| работать с вами.			
+				.company__item
+					.company__img
+						img(src="img/icons/document.png", alt="")
+					.company__title
+						span.span
+							| Команда
+					.company__dscr
+						p.p
+							| Каждый копирайтер, колл-менеджер 
+							| и оператор, который хочет стать 
+							| участником нашей сети, проходит 
+							| жесткий отбор и обучение, что 
+							| позволяет нам соблюдать стандарты 
+							| Call One и в полной мере 
+							| соответствовать ожиданиям 
+							| наших клиентов.
+				.company__item
+					.company__img
+						img(src="img/icons/price.png", alt="")
+					.company__title
+						span.span
+							| Индивидуальные цены	
+					.company__dscr
+						p.p
+							| Мы можем предоставлять услуги по 
+							| индивидуальным ценам, все зависит
+							| от того сколько минут 
+							| Вы используете в месяц.
+				.company__item
+					.company__img
+						img(src="img/icons/shield.png", alt="")
+					.company__title
+						span.span
+							| Безопасность
+					.company__dscr
+						p.p
+							| Все наши специалисты проходят 
+							| тщательную проверку как 
+							| профессиональных качеств,
+							| так и благонадежности.
+				.company__item
+					.company__img
+						img(src="img/icons/garancy.png", alt="")
+					.company__title
+						span.span
+							| Гарантия
+					.company__dscr
+						p.p
+							| Маловероятно, но если вы 
+							| останетесь недовольны нашим 
+							| подходим, сообщите нам об этом 
+							| в течение 24 часов. Мы сделаем 
+							| Все чтоб данной ситуации 
+							| больше не повторилась.
+	section.founders
+		.container
+			h2.h2
+				| Основатели Call One
+			.founders__items-wrap
+				.founders__item
+					.founders__img
+						img(src="img/founders_1.png", alt="")
+					.founders__title
+						span.span
+							| Элла Геннадиевна 
+					.founders__dscr
+						p.p
+							| A-ella@callone.ru
+				.founders__item
+					.founders__img
+						img(src="img/founders_2.png", alt="")
+					.founders__title
+						span.span
+							| Екатерина Александровна 
+					.founders__dscr
+						p.p
+							| A-kate@callone.ru
+	section.company__contacts
+		.container
+			h2.h2
+				| Контактная информация
+			.company__contacts-wrap
+				.company__contacts-addr
+					.contacts-email
+						span.email-title
+							| Email:
+						a(href="mailto:info@callone.ru").email
+							| info@callone.ru
+					.contacts-phone
+						span.phone-title
+							| Телефон:
+						a(href="tel:7(495)5874033").phone
+							| 7 (495) 587-40-33
+				.company__contacts-qr
+					img(src="img/qr.png", alt="")
+
+
+
+
+
+
+
+
+
+
+
 block footer
 	include ./_includes/_layout/_footer_top
