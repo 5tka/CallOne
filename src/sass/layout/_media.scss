@@ -154,6 +154,19 @@
 		width: 45%;
 	}
 }
+@include breakpoint(760){
+	.zakazy-wrap{
+		padding: 5px;
+	}
+	.zakazy__left-block,
+	.zakazy__right-block{
+		float:none;
+		max-width: 100%;
+		margin-left:0;
+		margin-right: 0;
+		text-align: center;
+	}
+}
 @include breakpoint(750){
 	.call-center{
 		padding-top: 30px;
@@ -249,6 +262,17 @@
 		    margin: 0 auto;
 		}
 }
+@include breakpoint (600){
+	.most-populars__wrap-item{
+		width: 100%;
+	}
+	.most-populars__list{
+		text-align: center;
+	}
+	.most-populars__item{
+		width: 25%;
+	}
+}
 @include breakpoint(590){
 	.banner__form-wrap{
 		width: 95%;
@@ -307,6 +331,9 @@
 	}
 }
 @include breakpoint(440){
+	.zakazy__button .every-day__make-order .make-order{
+		padding: 10px 15px;
+	}
 	.banner__title-wrap{
 		@include font-size(25px);
 	}
@@ -350,5 +377,9 @@
 @include breakpoint(400){
 	.banner-title{
 		@include font-size(25px);
+	}
+	.close__popup{
+		right: 5px;
+		top: 26px;
 	}
 }

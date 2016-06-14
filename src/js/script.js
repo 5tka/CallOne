@@ -26,3 +26,7 @@ $(window).resize(function() {
         $('#nav-icon4').removeClass('open');
     } //
 });
+$('.call-button__link, .make-order, .popup-uslugi').on('click', function(event) {
+  event.preventDefault();
+  $('.container-popup').bPopup();
+});
