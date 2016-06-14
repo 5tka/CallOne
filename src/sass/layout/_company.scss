@@ -1,0 +1,206 @@
+.nav__link-make{
+	@extend .nav__link;
+	background: #61a327;
+	color: #fff;	
+	border-radius: 10px;
+	padding: 2px 25px;
+	&:hover{
+		color: #61a327;
+		background: #fff;
+		border: 2px solid #61a327;
+	}
+}
+.header_company{
+	.header__top-line{
+		border-bottom: 3px solid #6a6a6a;
+	}
+	.container{
+		max-width: 	1040px;
+	}
+}
+.company{
+	.container{
+		max-width: 1040px;
+	}
+}
+.container-company{
+	max-width: 	1040px;
+}
+.company{
+	&:after{
+		content: '';
+		position: absolute;
+		background: url(../img/icons/pattern.png) repeat-x;
+		height: 6px;
+		width: 100%;
+	}
+	.h2{
+		padding-left: 0;
+		margin-left: 0;
+		margin-top: 60px;
+		margin-bottom: 	25px;
+		font-family: 'etelka_prolight';
+		text-align: center;
+		&:before{
+			display: none;
+		}
+	}
+	&__items-wrap{
+		width: 100%;
+		text-align: justify;
+		&:last-child:after{
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	&__item{
+		font-family: 'etelkaregregular';
+		width: 30.5%;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+		margin-bottom: 45px;
+	}
+	&__img{
+		display: inline-block;
+		width: 245px;
+		height: 228px;
+		line-height: 228px;
+		margin-bottom: 40px;
+		img{
+			vertical-align: middle;
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+	&__title{
+		font-size: 21px;
+		text-align: center;
+		color: #6a6a6a;
+		margin-bottom: 10px;
+	}
+	&__dscr{
+		font-size: 13px;
+		color: #9b9b9b;
+		text-align: justify;
+		width: 	85%;
+	    margin: 0 auto;
+	}
+	&__footer{
+		.footer__top{
+			background: #f4f4f4;
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+.founders{
+	border-bottom: 3px solid #6a6a6a;
+	.h2{
+		padding-left: 0;
+		margin-left: 0;
+		margin-top: 50px;
+		margin-bottom: 70px;
+		font-family: 'etelka_prolight';
+		text-align: center;
+		&:before{
+			display: none;
+		}
+	}
+	&__items-wrap{
+		width: 100%;
+		text-align: center;
+		&:last-child:after{
+			content: '';
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	&__item{
+		font-family: 'etelkaregregular';
+		width: 400px;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+		margin-bottom: 50px;
+	}
+	&__title{
+		color: #6a6a6a;
+		font-size: 23px;
+	}
+	&__dscr{
+		font-family: 'etelka_prolight';
+		color: #a4a3a3;
+		font-size: 18px;
+	}
+}
+.company__contacts{
+	min-height: 460px;
+	border-bottom: 3px solid #6a6a6a;
+	.contacts-email,
+	.contacts-phone{
+		@include clearfix(); 
+		line-height: 40px;
+	}
+	.contacts-email{
+		margin-bottom: 10px;
+	}
+	.phone,
+	.email{
+		float: right;
+		color: #707070;
+		font-size: 30px;
+	}
+	.phone{
+		font-size: 26px;
+	}
+	.email-title,
+	.phone-title{
+		float: left;
+	}
+	&-wrap{
+		width: 62%;
+		margin: 0 auto;
+		@include clearfix();
+		font-size: 25px;
+		position: relative;
+	}
+	&-addr{
+		float: left;
+		width: 355px;
+		padding: 73px 0;
+	}
+	&-qr{
+		float: right;
+		position: relative;
+		font-size: 0;	
+		 &:before{
+			content: '';
+			position: absolute;
+			border-left: 5px solid #61a327;
+			bottom: 0;
+			top: 0;
+		}
+		img{
+			padding-left: 27px;
+		}
+	}
+	.h2{
+		margin-left: 0;
+		padding-left: 0;
+		margin-top: 60px;
+		margin-bottom: 15px;
+		font-family: 'etelka_prolight';
+		text-align: center;
+		font-size: 42px;
+		&:before{
+			display: none;
+		}
+	}
+}
