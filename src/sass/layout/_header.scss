@@ -355,7 +355,7 @@ form.count-price{
 	right: 27px;
 	width: 41px;
 	height: 41px;
-	background: url(../img/icons/x.png);
+	background: url(../img/icons/close-popup.png);
 	background-size: 65%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -371,7 +371,7 @@ form.count-price{
 .most-populars{
 	&__title{
 		@include font-size(22px);
-		font-family: 'etelkaregregular';	
+		font-family: 'etelkaregregular';
 		text-align: center;
 		color: #ffffff;
 		text-transform: uppercase;
@@ -441,7 +441,7 @@ form.count-price{
 		bottom: 0;
 	}
 	&__pr{
-		
+
 	}
 	&__left-block{
 		float: left;
@@ -501,7 +501,7 @@ form.count-price{
 .every-day__make-order .make-order:hover{
 	border: 2px solid $green;
 }
-}	
+}
 .zakazy__button-descr{
 	max-width: 550px;
 	margin: 0 auto;
@@ -509,4 +509,4 @@ form.count-price{
 	font-family: 'etelka_prolight';
 	color: #6a6a6a;
 	text-align: center;
-}	
+}
