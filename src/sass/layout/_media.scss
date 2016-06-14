@@ -153,21 +153,23 @@
 	.uslugi__item-block{
 		width: 45%;
 	}
+	.partners__wrap{
+		text-align: center;
+		.partners__item {
+			width: 40%;
+			margin-top: 15px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
 }
 @include breakpoint(750){
 	.call-center{
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
-	.partners__item{
-		display: block;
-		margin: 0 auto;
-		margin-top: 45px;
-		width: 50%;
-		&:first-child{
-			margin-top: 0;
-		}
-	}
+
 	.every-day__item{
 		margin-bottom: 15px;
 	}
@@ -187,6 +189,9 @@
 }
 
 @include breakpoint(700){
+	.partners__wrap{
+		text-align: justify;
+	}
 	.easy{
 		&__items-wrap{
 			width: 100%;
@@ -250,8 +255,16 @@
 		}
 }
 @include breakpoint(590){
-	.banner__form-wrap{
-		width: 95%;
+	.partners__wrap{
+		.partners__item{
+			display: block;
+			margin: 0 auto;
+			margin-top: 45px;
+			width: 50%;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
 	}
 }
 @include breakpoint(530){
@@ -307,6 +320,9 @@
 	}
 }
 @include breakpoint(440){
+	.banner__form-wrap{
+		width: 95%;
+	}
 	.banner__title-wrap{
 		@include font-size(25px);
 	}
