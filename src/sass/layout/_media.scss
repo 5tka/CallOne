@@ -1,4 +1,4 @@
-@include breakpoint(1100) {
+@include breakpoint(1100){
 	.every-day__content{
 		.every-day__item{
 			&.bottom{
@@ -75,6 +75,26 @@
 		margin-right: 0;
 	}
 }
+@include breakpoint(1000){
+	.company__contacts-qr,
+	.company__contacts-addr{
+		float: none !important;
+	}
+	.company__contacts-addr{
+		margin: 0 auto !important;
+		padding: 0 0 40px 0 !important;
+	}
+	.company__contacts-qr{
+		img{
+			padding: 0 !important;
+			display: block;
+			margin: 0 auto;
+		}
+		&:before{
+			display: none;
+		}
+	}
+}
 @include breakpoint(950){
 	.header{
 		&__top-line{
@@ -129,7 +149,11 @@
 		left: auto;
 		right: 0;
 	}
-
+	.company{
+		&__item{
+			width: 45% !important;
+		}
+	}
 }
 @include breakpoint (920){
 	.footer__left-block{
@@ -185,9 +209,7 @@
 		@include font-size(20px);
 		margin-bottom: 50px;
 	}
-
 }
-
 @include breakpoint(700){
 	.partners__wrap{
 		text-align: justify;
@@ -266,8 +288,26 @@
 			}
 		}
 	}
+	.company__contacts-addr{
+		text-align: center;
+	}
+	.company__contacts-wrap{
+		width: 100% !important;
+	}
+	.email-title,
+	.phone-title,
+	.phone,
+	.email{
+		float: none !important;
+		display: block;
+	}
 }
 @include breakpoint(530){
+	.company{
+		&__item{
+			width: 100% !important;
+		}
+	}
 	.easy__item{
 			&:after{
 			content: '';
@@ -283,6 +323,9 @@
 	}
 }
 @include breakpoint(500){
+	.founders__item{
+		width: 100% !important;
+	}
 	.safe__items-wrap{
 		width: 100%;
 	}
@@ -322,6 +365,8 @@
 @include breakpoint(440){
 	.banner__form-wrap{
 		width: 95%;
+	.company__contacts-addr{
+		width: 100% !important;
 	}
 	.banner__title-wrap{
 		@include font-size(25px);
