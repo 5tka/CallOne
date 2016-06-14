@@ -157,6 +157,9 @@
 	}
 }
 @include breakpoint (920){
+	.popup__most-populars{
+		height:auto;
+	}
 	.footer__left-block{
 		float:none;
 		width: 100%;

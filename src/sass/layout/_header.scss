@@ -364,7 +364,7 @@ form.count-price{
 	cursor:pointer;
 }
 .popup__most-populars{
-	min-height: 354px;
+	height: 354px;
 	background: url(../img/populars-bg.png);
 	background-size: cover;
 }
@@ -424,12 +424,12 @@ form.count-price{
 		text-align: center;
 		font-family: 'etelka_prolight';
 		@include font-size(26px);
-		padding: 38px 0;
+		padding: 23px 0;
 		padding-bottom: 28px;
 		text-transform: uppercase;
 	}
 	&__phone{
-		padding-bottom: 65px;
+		padding-bottom: 38px;
 		position: relative;
 	}
 	&__phone:before{
@@ -441,7 +441,7 @@ form.count-price{
 		bottom: 0;
 	}
 	&__pr{
-
+		
 	}
 	&__left-block{
 		float: left;
@@ -466,7 +466,7 @@ form.count-price{
 	background: #ffffff;
 }
 .zakazy__pr{
-	padding-top: 56px;
+	padding-top: 50px;
 	padding-bottom: 14px;
 	border-bottom: 2px solid #6a6a6a;
 }
@@ -486,16 +486,20 @@ form.count-price{
 }
 .zakazy__button{
 	padding-top: 64px;
-	padding-bottom: 43px;
+	padding-bottom: 27px;
 	.every-day__make-order{
 		margin-top: 0;
-		margin-bottom: 43px;
+		margin-bottom: 32px;
 		padding: 0;
 	}
 .every-day__make-order .make-order {
 	text-transform: none;
 	font-weight: normal;
 	padding: 13px 60px;
+	border: 2px solid transparent;
+}
+.every-day__make-order .make-order:hover{
+	border: 2px solid $green;
 }
 }	
 .zakazy__button-descr{
