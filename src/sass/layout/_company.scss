@@ -76,6 +76,14 @@
 		color: #9b9b9b;
 		text-align: justify;
 	}
+	&__footer{
+		.footer__top{
+			background: #f4f4f4;
+			&:after{
+				display: none;
+			}
+		}
+	}
 }
 .founders{
 	border-bottom: 3px solid #6a6a6a;
