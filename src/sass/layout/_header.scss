@@ -117,7 +117,14 @@
   bottom: 0px;
   left: 0px;
 }
-
+// SELECT
+form.count-price{
+	label{
+		text-align: center;
+		width: 100%;
+		color:#ffffff;
+	}
+}
 .banner{
 	&__title-wrap{
 		padding-left: 18px;
@@ -153,15 +160,21 @@
 	}
 	&__form-wrap{
 		padding-left: 18px;
-		width: 22%;
+		margin-left: 25px;
+		padding: 10px;
+		width: 530px;
 		position: relative;
+		background: rgba(95,96,96,.7);
+		border-radius: 7px;
 		&:before{
 			content: '';
 			position: absolute;
-			border-left: 8px solid $green;
-			bottom: 0;
-			top: 0;
-			left: 0;
+			bottom: 10px;
+			top: 10px;
+			left: -25px;
+			width: 8px;
+			background-size: 20px;
+			background: #61a327;
 		}
 		.count-price select{
 			display: none !important;
@@ -180,7 +193,10 @@
 		}
 		.jq-selectbox{
 			padding: 0 !important;
-			font-size: 25px !important;
+			font-size: 20px !important;
+		}
+		.jq-selectbox ul{
+			width: 100%;
 		}
 		.jq-selectbox__select{
 			&:after{
@@ -190,16 +206,16 @@
 				height: 9px;
 				background: url('../img/icons/arrow-b.png');
 				right: 15px;
-				top: 21px;
+				top: 15px;
 			}
 		}
 		.jq-selectbox__dropdown{
+			width: 100% !important;
 			top: 50px;
-			left: -3px;
 		}
 		.select-service,
 		.input-tel{
-			@include font-size(25px);
+			@include font-size(20px);
 			margin-bottom: 20px;
 			background: none;
 			border: 3px solid #fff;
@@ -207,29 +223,31 @@
 			cursor: pointer;
 			outline: none;
 			color: $grey;
-			width: 240px;
+			width: 100%;
 		}
 		.input-tel{
-			cursor: default;
+			cursor: text;
 		}
 		input[placeholder] {
-			&::-webkit-input-placeholder {color:#6a6a6a;}
-			&::-moz-placeholder          {color:#6a6a6a;}
-			&:-moz-placeholder           {color:#6a6a6a;}
-			&:-ms-input-placeholder      {color:#6a6a6a;}
-			color:#6a6a6a;
+			text-align: center;
+			&::-webkit-input-placeholder {color:#ffffff;}
+			&::-moz-placeholder          {color:#ffffff;}
+			&:-moz-placeholder           {color:#ffffff;}
+			&:-ms-input-placeholder      {color:#ffffff;}
+			color:#ffffff;
 			font-family: 'etelkaregregular';
 		}
 		.option-service{
-			@include font-size(22px);
+			@include font-size(18px);
 			cursor: pointer;
 			padding: 10px;
 			outline: none;
-			color: $grey;
-			width: 240px;
+			color: #ffffff;
+			width: 100%;
 			border-bottom: 3px solid #fff;
 			&-h{
 				background: #fff;
+				color: $grey;
 				&:hover{
 					border-bottom: 3px solid $green;
 					color: $green;
@@ -239,7 +257,7 @@
 		}
 		.input-sbt{
 			@include font-size(20px);
-			width: 240px;
+			width: 100%;
 			color: #fff;
 			cursor: pointer;
 			padding: 11px;
@@ -255,6 +273,7 @@
 		}
 	}
 }
+
 .nav{
 	&__item{
 		display: inline-block;
@@ -274,20 +293,32 @@
 		}
 		&:hover{
 			color: $green;
+			border: 2px dotted $green;
+			border-radius: 10px;
 		}
-		&-phone{
-			position: absolute;
-			display: inline-block;
-			bottom: 0;
-			right: 14px;
-			top: 20px;
-			color: #4c00f8;
-			@include font-size(14px);
-			text-decoration: underline;
+		&-tel{
+			@include font-size(20px);
+			padding: 0 12px;
 			font-family: 'etelkaregregular';
+			color: #5f6060;
 			&:hover{
-				text-decoration: none;
+				color: $green;
+				border:none;
 			}
 		}
-	}
+		&-phone{
+			line-height: 14px;
+			position: absolute;
+			top: 48px;
+			right: 14px;
+			color: #5f6060;
+			font-size: 14px;
+			text-decoration: underline;
+			font-family: etelkaregregular;
+			&:hover{
+				text-decoration: none;
+				color: $green;
+			}
+		}
+}
 }
