@@ -152,10 +152,13 @@ form.count-price{
 	    width: 60%; // однакова ширина h1
 	}
 	&-sub-title{
-		@include font-size(18px);
-		font-family: 'etelkaregregular';
+		@include font-size(16px);
+		font-family: 'etelka_probold';
 		font-weight: bold;
 		display: block;
+		width: 60%;
+		background: #fff;
+		padding-left: 5px;
 	}
 	&__form-wrap{
 		padding-left: 18px;
@@ -277,7 +280,7 @@ form.count-price{
 			@include transition(.25s);
 			@include box-shadow(0px 3px 0px 0px rgba(64,120,16,1));
 			&:hover{
-				color: $green;
+				color: $grey;
 				background: #fff;
 			}
 		}
@@ -324,7 +327,7 @@ form.count-price{
 			color: #5f6060;
 			font-size: 14px;
 			text-decoration: underline;
-			font-family: etelkaregregular;
+			font-family: 'etelka_prolight';
 			&:hover{
 				text-decoration: none;
 				color: $green;
@@ -397,11 +400,13 @@ form.count-price{
 	}
 	&__image{
 		display: inline-block;
-		padding: 15px;
+		padding: 12px;
 		width: 82px;
 		height: 82px;
 		border: 2px dotted #61a327;
-		@include border-radius(50%);
+		border-radius: 50%;
+		background-clip: padding-box;
+		line-height: 85px;
 	}
 	&__item-last{
 		display: inline-block;
@@ -410,6 +415,9 @@ form.count-price{
 	&__descr{
 		color:#ffffff;
 		@include font-size(12px);
+		    max-width: 105px;
+    text-align: center;
+    display: inline-block;
 	}
 }
 .zakazy-wrap{
