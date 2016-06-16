@@ -6,6 +6,32 @@
 			}
 		}
 	}
+	.safe__item-title{
+		.span{
+			width: 200%;
+		}
+	}
+}
+@include breakpoint(1095){
+	.company__contacts-qr,
+	.company__contacts-addr{
+		float: none !important;
+	}
+	.company__contacts-addr{
+		margin: 0 auto !important;
+		padding: 0 0 40px 0 !important;
+	}
+	.company__contacts-qr{
+		img{
+			padding: 0 !important;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 60px;
+		}
+		&:before{
+			display: none;
+		}
+	}
 }
 @include breakpoint(1040){
 	.h2{
@@ -66,34 +92,15 @@
 			margin-left: 80px;
 		}
 	}
+	.safe__item-title .span{
+		width: 100%;
+	}
 	.safe__item-title span:before{
 		display: none;
 	}
 	.safe__item{
 		padding-left: 0;
-
 		margin-right: 0;
-	}
-}
-@include breakpoint(1010){
-	.company__contacts-qr,
-	.company__contacts-addr{
-		float: none !important;
-	}
-	.company__contacts-addr{
-		margin: 0 auto !important;
-		padding: 0 0 40px 0 !important;
-	}
-	.company__contacts-qr{
-		img{
-			padding: 0 !important;
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 60px;
-		}
-		&:before{
-			display: none;
-		}
 	}
 }
 @include breakpoint(950){
@@ -175,6 +182,18 @@
 	.footer__right-block{
 		float:none;
 		width: 100%;
+	}
+	.company__footer{
+		.footer__right-block{
+			text-align: center;
+		}
+		.social-block__wrap,
+		.pay-block__wrap{
+			float: none;
+		}
+		.pay-block__list{
+			display: inline-block;
+		}
 	}
 }
 @include breakpoint(800){
@@ -301,7 +320,7 @@
 		text-align: center;
 	}
 	.most-populars__item{
-		width: 25%;
+		width: 30%;
 	}
 }
 @include breakpoint(590){
@@ -336,7 +355,7 @@
 			width: 100% !important;
 		}
 		&__dscr{
-			width: 	95% !important;
+			width: 	100% !important;
 		}
 	}
 	.easy__item{
@@ -394,6 +413,9 @@
 	}
 }
 @include breakpoint(440){
+	.most-populars__item{
+		width: 40%;
+	}
 	.zakazy__button .every-day__make-order .make-order{
 		padding: 10px 15px;
 	}
@@ -450,5 +472,16 @@
 	.close__popup{
 		right: 5px;
 		top: 26px;
+	}
+}
+@include breakpoint(350){
+	.input-sbt{
+		font-size: 18px !important;
+	}
+	.banner__form-wrap{
+		margin-left: 14px;
+		&:before{
+			left: -14px;
+		}	
 	}
 }
