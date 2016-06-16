@@ -195,7 +195,7 @@
 		}
 	}
 }
-@include breakpoint(760){
+@include breakpoint(780){
 	.zakazy-wrap{
 		padding: 5px;
 	}
@@ -450,11 +450,17 @@
 	}
 }
 @include breakpoint(400){
+
+	.popup__title{
+		text-align: left;
+		padding-left: 15px;
+
+	}
 	.banner-title{
 		@include font-size(25px);
 	}
 	.close__popup{
-		right: 5px;
+		right: 15px;
 		top: 26px;
 	}
 }

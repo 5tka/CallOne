@@ -29,7 +29,7 @@ $(window).resize(function() {
 $('.call-button__link, .make-order, .popup-uslugi').on('click', function(event) {
   event.preventDefault();
   $('.container-popup').bPopup({
-		speed: 500,
+		speed: 150,
 		modalColor: '#58697a', 
 		opacity : '0.75'
   });
