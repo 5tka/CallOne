@@ -28,9 +28,10 @@ $(window).resize(function() {
 });
 $('.call-button__link, .make-order, .popup-uslugi').on('click', function(event) {
   event.preventDefault();
-  $('.container-popup').bPopup({
+  var popupCall=$('.container-popup').bPopup({
 		speed: 150,
-		modalColor: '#58697a', 
+		modalColor: '#58697a',
 		opacity : '0.75'
   });
+
 });

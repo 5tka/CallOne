@@ -186,7 +186,7 @@
 	}
 	.social-block__wrap{
 	    vertical-align: top;
-	    float: none; 
+	    float: none;
 	    display: inline-block;
 	    margin-right: 20px;
 	}
@@ -197,7 +197,17 @@
 		margin-left: 20px;
 	}
 }
+@include breakpoint(838){
+	.container-popup{
+		width: 100% !important;
+		margin-left: 0;
+		left: 0 !important;
+	}
+}
 @include breakpoint(801){
+	.uslugi__wrap{
+		text-align: center;
+	}
 	.uslugi__item-block{
 		width: 45%;
 	}
@@ -252,7 +262,12 @@
 }
 @include breakpoint(700){
 	.partners__wrap{
-		text-align: justify;
+		text-align: center;
+		margin-left: -15px;
+		.partners__item{
+			margin-left: 30px;
+
+		}
 	}
 	.easy{
 		&__items-wrap{
@@ -332,6 +347,7 @@
 }
 @include breakpoint(590){
 	.partners__wrap{
+		margin-left: 0;
 		.partners__item{
 			display: block;
 			margin: 0 auto;
@@ -434,8 +450,24 @@
 	.uslugi__item-block{
 		width: 100%;
 	}
+
+	.popup__title{
+		text-align: left;
+		padding-left: 15px;
+
+	}
+	.banner-title{
+		@include font-size(25px);
+	}
+	.close__popup{
+		right: 15px;
+		top: 26px;
+	}
 }
 @include breakpoint(440){
+	.every-day__item{
+		margin-left: 0 !important;
+	}
 	.most-populars__item{
 		width: 40%;
 	}
@@ -470,21 +502,10 @@
 		display: none;
 	}
 }
-@include breakpoint(400){
+// @include breakpoint(400){
 
-	.popup__title{
-		text-align: left;
-		padding-left: 15px;
 
-	}
-	.banner-title{
-		@include font-size(25px);
-	}
-	.close__popup{
-		right: 15px;
-		top: 26px;
-	}
-}
+// }
 @include breakpoint(350){
 	.input-sbt{
 		font-size: 18px !important;
