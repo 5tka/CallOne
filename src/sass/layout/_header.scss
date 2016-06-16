@@ -301,6 +301,25 @@ form.count-price{
 	border-bottom: 3px solid #61a327 !important;
 }
 
+.nav__arrow{
+	position: relative;
+    padding-right: 25px !important;
+    border: none !important;
+    color: #407810 !important;
+    &:hover{
+    	cursor: default;
+    }
+	&:after{
+		content:"";
+		position: absolute;
+		width: 16px;
+		height: 12px;
+		background: url(../img/icons/arrow-b.png) 50% no-repeat;
+		@include rotate(270);
+		right: 0px;
+		top: 30px;
+	}
+}
 .nav{
 	&__item{
 		display: inline-block;
@@ -313,6 +332,12 @@ form.count-price{
 		border: 2px dotted transparent;
 		font-family: 'etelkaregregular';
 		color: #5f6060;
+		&-bn{
+			border:none;
+		}
+		&-bn:hover{
+			border: none !important;
+		}
 		&_active{
 			color: $green;
 			border: 2px dotted $green;
