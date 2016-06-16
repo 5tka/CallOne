@@ -16,12 +16,13 @@
 		}
 }
 .partners{
-	padding-top: 40px;
+	padding-top: 35px;
 }
 .partners__wrap{
     width: 100%;
     text-align: justify;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
+	line-height: 0;
 }
 .partners__item{
 	display: inline-block;
@@ -34,8 +35,8 @@
 }
 // Call - center
 .call-center{
-	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-top: 80px;
+	padding-bottom: 70px;
 	border-top: 3px solid #6a6a6a;
 	border-bottom: 3px solid #6a6a6a;
 	text-align: center;
@@ -43,8 +44,8 @@
 }
 .call-title-big {
 	font-family: 'etelkaregregular';
-	@include font-size(47px);
-	margin-bottom: 65px;
+	@include font-size(38.5px);
+	margin-bottom: 60px;
 	color: #6a6a6a;
 	.green-text{
 		color: #61a327;
@@ -52,13 +53,19 @@
 	}
 }
 .call-title-small{
-	@include font-size(30px);
-	margin-bottom: 65px;
+	@include font-size(26px);
+	margin-bottom: 60px;
 	color: #6a6a6a;
+}
+.call-center {
+	.call-button__link {
+		font-size: 26px;
+	}
 }
 .call-button{
 	@include font-size(31px);
 	color: $green;
+    font-family: 'etelkaregregular';
 	&__link{
 		border:3px solid $green;
 		@include border-radius(14px);

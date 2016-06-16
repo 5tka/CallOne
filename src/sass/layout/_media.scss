@@ -12,27 +12,6 @@
 		}
 	}
 }
-@include breakpoint(1095){
-	.company__contacts-qr,
-	.company__contacts-addr{
-		float: none !important;
-	}
-	.company__contacts-addr{
-		margin: 0 auto !important;
-		padding: 0 0 40px 0 !important;
-	}
-	.company__contacts-qr{
-		img{
-			padding: 0 !important;
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 60px;
-		}
-		&:before{
-			display: none;
-		}
-	}
-}
 @include breakpoint(1040){
 	.h2{
 		position: relative;
@@ -196,6 +175,8 @@
 		vertical-align: top;
 		margin-left: 20px;
 	}
+
+
 }
 @include breakpoint(838){
 	.container-popup{
@@ -258,6 +239,28 @@
 	.call-title-small{
 		@include font-size(20px);
 		margin-bottom: 50px;
+	}
+	.company__contacts-wrap{
+		width: 100% !important;
+	}
+	.company__contacts-qr,
+	.company__contacts-addr{
+		float: none !important;
+	}
+	.company__contacts-addr{
+		margin: 0 auto !important;
+		padding: 0 0 40px 0 !important;
+	}
+	.company__contacts-qr{
+		img{
+			padding: 0 !important;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 60px;
+		}
+		&:before{
+			display: none;
+		}
 	}
 }
 @include breakpoint(700){
@@ -502,10 +505,6 @@
 		display: none;
 	}
 }
-// @include breakpoint(400){
-
-
-// }
 @include breakpoint(350){
 	.input-sbt{
 		font-size: 18px !important;
