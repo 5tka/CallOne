@@ -14,6 +14,15 @@ $('.about-company__content').find('.init_hide').on('click',function(){
 });
 
 $(document).ready(function(){
+	// Плавная прокрутка к якорю
+	$('a[href^="#"]').click(function(){
+	//Сохраняем значение атрибута href в переменной:
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+	return false;
+	});
+
+
 	$('#nav-icon4').click(function(){
 		$(this).toggleClass('open');
 		$('.nav__list').stop(true, true).css('padding','28px 0').slideToggle('slow');
@@ -26,7 +35,7 @@ $(window).resize(function() {
         $('#nav-icon4').removeClass('open');
     } //
 });
-$('.call-button__link, .make-order, .popup-uslugi').on('click', function(event) {
+$('.popup-uslugi').on('click', function(event) {
   event.preventDefault();
   var popupCall=$('.container-popup').bPopup({
 		speed: 150,

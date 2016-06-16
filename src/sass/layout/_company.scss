@@ -1,7 +1,7 @@
 .nav__link-make{
 	@extend .nav__link;
 	background: #61a327;
-	color: #fff;	
+	color: #fff;
 	border-radius: 10px;
 	padding: 2px 25px;
 	&:hover{
@@ -151,7 +151,7 @@
 	border-bottom: 3px solid #6a6a6a;
 	.contacts-email,
 	.contacts-phone{
-		@include clearfix(); 
+		@include clearfix();
 		line-height: 40px;
 	}
 	.contacts-email{
@@ -171,7 +171,7 @@
 		float: left;
 	}
 	&-wrap{
-		width: 62%;
+		width: 689px;
 		margin: 0 auto;
 		@include clearfix();
 		font-size: 25px;
@@ -185,7 +185,7 @@
 	&-qr{
 		float: right;
 		position: relative;
-		font-size: 0;	
+		font-size: 0;
 		 &:before{
 			content: '';
 			position: absolute;
