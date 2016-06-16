@@ -345,8 +345,11 @@ form.count-price{
 // ------------------------------------------POPUP STYLES------------------------------------------
 
 .container-popup{
-	max-width: 838px;
+	// max-width: 838px;
+	width: 838px;
 	display: none;
+	left: 50% !important;
+	margin-left: -419px;
 }
 .popup__title{
 	height: 95px;
