@@ -300,6 +300,12 @@ form.count-price{
 		border: 2px dotted transparent;
 		font-family: 'etelkaregregular';
 		color: #5f6060;
+		&-bn{
+			border:none;
+		}
+		&-bn:hover{
+			border: none !important;
+		}
 		&_active{
 			color: $green;
 			border: 2px dotted $green;
