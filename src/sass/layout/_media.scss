@@ -182,18 +182,19 @@
 	.footer__right-block{
 		float:none;
 		width: 100%;
+		text-align: center;
 	}
-	.company__footer{
-		.footer__right-block{
-			text-align: center;
-		}
-		.social-block__wrap,
-		.pay-block__wrap{
-			float: none;
-		}
-		.pay-block__list{
-			display: inline-block;
-		}
+	.social-block__wrap{
+	    vertical-align: top;
+	    float: none; 
+	    display: inline-block;
+	    margin-right: 20px;
+	}
+	.pay-block__wrap {
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 20px;
 	}
 }
 @include breakpoint(801){
@@ -401,46 +402,19 @@
 			width: 100%;
 		}
 	}
-	// .nav{
-	// 	&__list{
-	// 		display: block;
-	// 	}
-	// 	&__item{
-	// 		display: block;
-	// 		text-align: center;
-	// 	}
-	// }
-
-		.uslugi__item-block{
+	.uslugi__item-block{
 		width: 100%;
 	}
 	.services__item{
 		margin-left: 0;
 	}
 }
-@include breakpoint(440){
-	.most-populars__item{
-		width: 40%;
+@include breakpoint(460){
+	.social-block__wrap{
+		margin-right: 0;
 	}
-	.zakazy__button .every-day__make-order .make-order{
-		padding: 10px 15px;
-	}
-	.banner__form-wrap{
-		width: 95%;
-	}
-	.company__contacts-addr{
-		width: 100% !important;
-	}
-	.banner__title-wrap{
-		@include font-size(25px);
-	}
-	.easy .call-button__link{
-		@include font-size(20px);
-	}
-
-	.header__nav-wrap.center ul{
-		left: 0;
-		margin-left: 10%;
+	.pay-block__wrap{
+		margin-left: 0;
 	}
 	.social-block__wrap{
 		float:none;
@@ -459,6 +433,31 @@
 	}
 	.uslugi__item-block{
 		width: 100%;
+	}
+}
+@include breakpoint(440){
+	.most-populars__item{
+		width: 40%;
+	}
+	.zakazy__button .every-day__make-order .make-order{
+		padding: 10px 15px;
+	}
+	.banner__form-wrap{
+		width: 100%;
+	}
+	.company__contacts-addr{
+		width: 100% !important;
+	}
+	.banner__title-wrap{
+		@include font-size(25px);
+	}
+	.easy .call-button__link{
+		@include font-size(20px);
+	}
+
+	.header__nav-wrap.center ul{
+		left: 0;
+		margin-left: 10%;
 	}
 }
 @include breakpoint(420){
@@ -489,11 +488,5 @@
 @include breakpoint(350){
 	.input-sbt{
 		font-size: 18px !important;
-	}
-	.banner__form-wrap{
-		margin-left: 14px;
-		&:before{
-			left: -14px;
-		}	
 	}
 }
