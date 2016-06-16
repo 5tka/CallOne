@@ -1,8 +1,3 @@
-(function($) {
-	$(function() {
-	  $('.select-service').styler();
-	});
-})(jQuery);
 $('.about-company__content').find('.init_hide').on('click',function(){
 	$(this).toggleClass('active')
 	.prev('.hidden_content').slideToggle();
@@ -14,6 +9,11 @@ $('.about-company__content').find('.init_hide').on('click',function(){
 });
 
 $(document).ready(function(){
+	//select
+	$(".select-service").select2({
+  minimumResultsForSearch: Infinity
+});
+
 	// Плавная прокрутка к якорю
 	$('a[href^="#"]').click(function(){
 	//Сохраняем значение атрибута href в переменной:
