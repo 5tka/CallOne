@@ -283,6 +283,7 @@ form.count-price{
 			&:hover{
 				color: $grey;
 				background: #fff;
+				@include box-shadow(none);
 			}
 		}
 	}
