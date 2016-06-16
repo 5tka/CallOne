@@ -197,6 +197,13 @@
 		margin-left: 20px;
 	}
 }
+@include breakpoint(838){
+	.container-popup{
+		width: 100% !important;
+		margin-left: 0;
+		left: 0 !important;
+	}
+}
 @include breakpoint(801){
 	.uslugi__item-block{
 		width: 45%;
