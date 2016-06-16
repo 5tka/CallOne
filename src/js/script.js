@@ -42,5 +42,4 @@ $('.popup-uslugi').on('click', function(event) {
 		modalColor: '#58697a',
 		opacity : '0.75'
   });
-
 });

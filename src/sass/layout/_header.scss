@@ -288,7 +288,25 @@ form.count-price{
 		}
 	}
 }
-
+.nav__arrow{
+	position: relative;
+    padding-right: 25px !important;
+    border: none !important;
+    color: #407810 !important;
+    &:hover{
+    	cursor: default;
+    }
+	&:after{
+		content:"";
+		position: absolute;
+		width: 16px;
+		height: 12px;
+		background: url(../img/icons/arrow-b.png) 50% no-repeat;
+		@include rotate(270);
+		right: 0px;
+		top: 30px;
+	}
+}
 .nav{
 	&__item{
 		display: inline-block;
