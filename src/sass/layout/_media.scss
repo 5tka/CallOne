@@ -196,15 +196,18 @@
 		}
 	}
 }
-@include breakpoint(800){
+@include breakpoint(801){
 	.uslugi__item-block{
 		width: 45%;
+	}
+	.poduslugi__list{
+		margin-bottom: 	15px;
 	}
 	.partners__wrap{
 		text-align: center;
 		.partners__item {
 			width: 40%;
-			margin-top: 15px;
+			margin-bottom: 15px;
 			&:first-child{
 				margin-top: 0;
 			}
@@ -259,6 +262,9 @@
 		width: 100% !important;
 	}
 	.banner-title{
+		width: 100%;
+	}
+	.banner-sub-title{
 		width: 100%;
 	}
 	.easy__item{
@@ -329,7 +335,7 @@
 			display: block;
 			margin: 0 auto;
 			margin-top: 45px;
-			width: 50%;
+			width: 80%;
 			&:first-child{
 				margin-top: 0;
 			}
