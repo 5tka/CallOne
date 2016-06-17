@@ -42,12 +42,17 @@
 			}
 		}
 		&-title{
-			min-height: 36px;
-			line-height: 18px;
 			margin-bottom: 5px;
+			min-height: 36px; 
+			line-height: 36px; 
+			margin-bottom: 5px; 
+			vertical-align: middle; 
 			.h3{
 				@include font-size(20px);
 				color: #717171;
+				display: inline-block;
+				line-height: 18px;
+				vertical-align: middle;
 			}
 		}
 		&-dscr{
