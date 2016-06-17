@@ -33,15 +33,13 @@ block header
 						| делать этого. Например, мы.
 				.banner__form-wrap
 					form.count-price.jq-select-multiple
-						label
-							select.select-service(name="type-service" data-placeholder="Тип услуг" required)
-								option.option-service
+						.select-service-wrap
+							select.select-service(name="type-service" data-placeholder="Тип услуг")
 								option.option-service.option-service-h Тип услуги 1
 								option.option-service.option-service-h Тип услуги 2
 								option.option-service.option-service-h Тип услуги 3
-						label
-							select.select-service(name="service" data-placeholder="Услуга" required)
-								option.option-service
+						.select-service-wrap
+							select.select-service(name="service" data-placeholder="Услуга")
 								option.option-service.option-service-h Услуга 1
 								option.option-service.option-service-h Услуга 2
 								option.option-service.option-service-h Услуга 3

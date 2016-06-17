@@ -250,6 +250,15 @@ form.count-price{
 			color: $grey;
 			width: 100%;
 		}
+		.select-service{
+			color: #fff;
+			option {
+				color: $grey;
+				&:focus{
+					outline: none;
+				}
+			}
+		}
 		.input-tel{
 			cursor: text;
 		}

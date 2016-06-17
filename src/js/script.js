@@ -11,8 +11,10 @@ $('.about-company__content').find('.init_hide').on('click',function(){
 $(document).ready(function(){
 	//select
 	$(".select-service").select2({
-  minimumResultsForSearch: Infinity
-});
+		minimumResultsForSearch: Infinity
+	});
+
+
 
 	// Плавная прокрутка к якорю
 	$('a[href^="#"]').click(function(){
@@ -40,6 +42,13 @@ $('.popup-uslugi').on('click', function(event) {
   var popupCall=$('.container-popup').bPopup({
 		speed: 150,
 		modalColor: '#58697a',
-		opacity : '0.75'
+		opacity : '0.75',
+		onClose: function(){
+			if($('#calculation-form-link').length) {
+			  $('html, body').animate({scrollTop: $('#calculation-form-link').offset().top}, 1000);
+			} else {
+				window.location.href = "index.html#calculation-form-link"
+			}
+		}
   });
 });
