@@ -37,18 +37,26 @@ $(window).resize(function() {
         $('#nav-icon4').removeClass('open');
     } //
 });
+$('.make-order').on('click', function(event) {
+	event.preventDefault();
+			if($('#calculation-form-link').length) {
+			  $('html, body').animate({scrollTop: $('#calculation-form-link').offset().top}, 1000);
+			} else {
+				window.location.href = "index.html#calculation-form-link"
+			}
+});
 $('.popup-uslugi').on('click', function(event) {
   event.preventDefault();
   var popupCall=$('.container-popup').bPopup({
 		speed: 150,
 		modalColor: '#58697a',
 		opacity : '0.75',
-		onClose: function(){
-			if($('#calculation-form-link').length) {
-			  $('html, body').animate({scrollTop: $('#calculation-form-link').offset().top}, 1000);
-			} else {
-				window.location.href = "index.html#calculation-form-link"
-			}
-		}
+		// onClose: function(){
+		// 	if($('#calculation-form-link').length) {
+		// 	  $('html, body').animate({scrollTop: $('#calculation-form-link').offset().top}, 1000);
+		// 	} else {
+		// 		window.location.href = "index.html#calculation-form-link"
+		// 	}
+		// }
   });
 });
